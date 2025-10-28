@@ -1,0 +1,48 @@
+<!-- 빵 가격 계산 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;">
+    <form  style="
+            display: flex;
+            flex-direction: column;
+            align-items: left;">
+        <h3>빵 3개당 종이봉투가 1개 더 추가로 제공됩니다.</h3>
+        바게트(3,000원) : <input type="text" id="baguette"><br>
+        크루와상(4,000원) : <input type="text" id="croissont"><br>
+    </form>
+    <button onclick="f1();">계산하기</button>
+    <div id="d1"></div>
+    <a href="final.html" >돌아가기</a><br>
+
+    <script>
+        function f1(){
+            let total, result;
+            let baguette = (document.querySelector('#baguette').value);
+            let croissont = (document.querySelector('#croissont').value);
+            let pTag = document.querySelector('#d1')
+
+            totalBrd = Number(baguette)+Number(croissont)
+            total = Number(baguette)*3000+Number(croissont)*4000
+
+            if(totalBrd>=12) paperBag='5개';
+            else if(totalBrd>=9) paperBag='4개';
+            else if(totalBrd>=6) paperBag='3개';
+            else if(totalBrd>=3) paperBag='2개';
+            else paperBag='1'
+
+            result = "<br> 총 결제금액 : " + total;
+            result = result + "<br> 종이봉투 : " + paperBag;
+            pTag.innerHTML = result;
+        }
+    </script>
+</body>
+</html>

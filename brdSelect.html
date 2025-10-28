@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>빵 선택</title>
+</head>
+<body  style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;">
+    <h3>구매하시는 빵을 선택해주세요. </h3>
+    <select id="s">
+        <option value="바게트" selected>바게트</option>
+        <option value="크루와상">크루와상</option>
+        <option value="뺑 오 쇼콜라">뺑 오 쇼콜라</option>
+        <option value="카스테라">카스테라</option>
+        <option value="초코소라빵">초코소라빵</option>
+        <option value="식빵">식빵</option>
+    </select>
+
+    <button onclick="dataReading();">선택완료</button> <hr>
+    <div id="result"></div>
+    <a href="final.html" >돌아가기</a><br>
+
+    <script>
+        function dataReading(){
+            let output = "선택한 빵 : "
+            let obj1 = document.querySelector("#s");
+            output = output + obj1.options[obj1.selectedIndex].value;
+            let obj2 = document.querySelector("#result");
+            obj2.innerHTML = output;
+        }
+    </script>
+</body>
+</html>
