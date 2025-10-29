@@ -7,10 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="
-        display: flex;
-        flex-direction: column;
-        align-items: center;">
+<body>
     <form  style="
             display: flex;
             flex-direction: column;
@@ -22,27 +19,5 @@
     <button onclick="f1();">계산하기</button>
     <div id="d1"></div>
     <a href="final.html" >돌아가기</a><br>
-
-    <script>
-        function f1(){
-            let total, result;
-            let baguette = (document.querySelector('#baguette').value);
-            let croissont = (document.querySelector('#croissont').value);
-            let pTag = document.querySelector('#d1')
-
-            totalBrd = Number(baguette)+Number(croissont)
-            total = Number(baguette)*3000+Number(croissont)*4000
-
-            if(totalBrd>=12) paperBag='5개';
-            else if(totalBrd>=9) paperBag='4개';
-            else if(totalBrd>=6) paperBag='3개';
-            else if(totalBrd>=3) paperBag='2개';
-            else paperBag='1'
-
-            result = "<br> 총 결제금액 : " + total;
-            result = result + "<br> 종이봉투 : " + paperBag;
-            pTag.innerHTML = result;
-        }
-    </script>
 </body>
 </html>

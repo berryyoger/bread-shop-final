@@ -4,41 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>빵집</title>
+    <title>Bread Shop</title>
+    <link rel="stylesheet" href="styles.css"/>
 </head>
-<body style="
-            display: flex;
-            flex-direction: column;
-            align-items: center;">
-    <h4>빵 구매</h4>
-
-    <img src="./img/croissont.png" width="400" height="400"
-    onmouseover="brdImgOver(this)"
-    onmouseout="brdImgOut(this)">
-
-    <a href="brdCount.html">가격계산</a><br>
-    <a href="brdSelect.html">빵 선택</a><br>
-    <script>
-        function brdImgOver (obj){
-            obj.src = "./img/bread.png"
-        }
-        function brdImgOut (obj){
-            obj.src = "./img/croissont.png"
-        }//빵 이미지
-
-        //하이퍼링크 디폴트이벤트 처리
-        function f(e){e.preventDefault();}
-
-        function f2(e){
-            let result = confirm("가격계산 사이트로 연결할까요 ?")
-            if(result == false) e.preventDefault();
-        }
-
-        window.onload = function(){
-            document.querySelector('#a1').onclick = f;
-            document.querySelector('#a2').addEventListener("click",f)
-            document.querySelector('#a3').onclick = f2;
-        }
-    </script>
+<header>
+    <nav>
+        <div class="brand">🥐Bread Shop</div>
+        <div class="navA">
+            <a href="">🥐Bread</a>
+            <a href="">🍰cake</a>
+            <a href="">🍪cookie</a>
+            <a href="">🥧pie</a>
+            <a href="">🍮dessert</a>
+        </div>
+        <div class="loginbox">
+            <a href="">Log In</a>
+            <a href="">Sign Up</a>
+        </div>
+    </nav>
+</header>
+<body>
+    <div class="container">
+        <section>
+            <h2>We make sweet and fresh bakery</h3>
+            <h1>Bread Shop</h1>
+            <h3>
+                Bread Shop makes fresh bread without chemical additives. Bakers in charge of confectionery make new bread every morning so that you can always enjoy fresh and warm bread.
+            </h2>
+        </section>
+    </div>
 </body>
 </html>

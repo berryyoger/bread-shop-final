@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>빵 선택</title>
 </head>
-<body  style="
-        display: flex;
-        flex-direction: column;
-        align-items: center;">
+<body>
     <h3>구매하시는 빵을 선택해주세요. </h3>
     <select id="s">
         <option value="바게트" selected>바게트</option>
@@ -24,14 +21,5 @@
     <div id="result"></div>
     <a href="final.html" >돌아가기</a><br>
 
-    <script>
-        function dataReading(){
-            let output = "선택한 빵 : "
-            let obj1 = document.querySelector("#s");
-            output = output + obj1.options[obj1.selectedIndex].value;
-            let obj2 = document.querySelector("#result");
-            obj2.innerHTML = output;
-        }
-    </script>
 </body>
 </html>
