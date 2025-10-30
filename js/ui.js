@@ -1,20 +1,3 @@
-//index
-function brdImgOver (obj){
-    obj.src = "./img/bread.png"
-}
-function brdImgOut (obj){
-    obj.src = "./img/croissont.png"
-}//빵 이미지
-
-
-function f(e){e.preventDefault();}
-
-function f2(e){
-    let result = confirm("가격계산 사이트로 연결할까요 ?")
-    if(result == false) e.preventDefault();
-}
-
-
 //header
 function headers(){
     const h = document.createElement("header")
@@ -63,4 +46,14 @@ const slides = document.querySelectorAll("#slideshow img");
                 slides[current].classList.add("active");
             }
     }
-setInterval (showNextSlide, 3000);
+
+function slideBrdInfo(bread){
+    let brdName = document.querySelector("#brdName");
+    let brdExplain = document.querySelector("#brdExplain");
+
+    brdName.innerText = bread.name
+    brdExplain.innerText = bread.onPage
+}
+
+slideBrdInfo(baguette)
+// setInterval (showNextSlide, 5000);

@@ -2,11 +2,11 @@
 function f1(){
     let total, result;
     let baguette = (document.querySelector('#baguette').value);
-    let croissont = (document.querySelector('#croissont').value);
+    let croissant = (document.querySelector('#croissant').value);
     let pTag = document.querySelector('#d1')
 
-    totalBrd = Number(baguette)+Number(croissont)
-    total = Number(baguette)*3000+Number(croissont)*4000
+    totalBrd = Number(baguette)+Number(croissant)
+    total = Number(baguette)*3000+Number(croissant)*4000
 
     if(totalBrd>=12) paperBag='5개';
     else if(totalBrd>=9) paperBag='4개';

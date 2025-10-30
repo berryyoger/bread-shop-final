@@ -201,6 +201,8 @@ article > .titleBox > h3{
     justify-content: center;
     cursor: pointer;
     border-radius: 10px;
+    transition-property: all;
+    transition-duration: 0.3s;
 }
 
 .slideShowBtn:hover{
@@ -232,6 +234,38 @@ article > .titleBox > h3{
     opacity: 1;
     }
 
+.brdInfo{
+    height: 480px; /*500px - 20px(padding-top)*/
+    width: 400px; /*500px - 100px(padding-left&right)*/
+    position: absolute;
+    z-index: 2;
+    transition-property: all;
+    transition-duration: 0.3s;
+    opacity: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+.brdInfo:hover{
+    opacity: 1;
+    background-color: rgba(29, 11, 0, 0.6);
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.brdInfo > h1{
+    color: var(--breadBright);
+    font-family: GanaChocolate;
+    font-size: 35pt;
+}
+
+.brdInfo > h3{
+    color: var(--breadBright);
+    font-family: 'Pretendard';
+    font-weight: 300;
+    font-size: 15pt;
+}
 
 .intro{
     height: 800px;
