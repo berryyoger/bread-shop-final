@@ -7,17 +7,40 @@
     <title>Bread Shop</title>
     <link rel="stylesheet" href="styles.css"/>
     <script defer src="js/ui.js"></script>
+    <script defer src="js/calculate.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <section>
-            <h2>We make sweet and fresh bakery</h3>
-            <h1>Bread Shop</h1>
-            <h3>
-                Bread Shop makes fresh bread without chemical additives. Bakers in charge of confectionery make new bread every morning so that you can always enjoy fresh and warm bread.
-            </h2>
-        </section>
+        <article>
+            <section class="titleBox">
+                <h2>We make sweet and fresh bakery</h3>
+                <h1>Bread Shop</h1>
+                <h3>
+                    Bread Shop makes fresh bread without chemical additives. Bakers in charge of confectionery make new bread every morning so that you can always enjoy fresh and warm bread.
+                </h2>
+            </section>
+
+            <section class="slideShowBox">
+                <div class="slideShowBtn" onclick="showPastSlide()">
+                    <img src="img/leftBtn.png" alt="이전">
+                </div>
+                <div id="slideshow">
+                    <img src="img/bread.png" class="active" alt="바게트">
+                    <img src="img/croissant.png" alt="크루와상">
+                    <img src="img/pac.png" alt="뱅 오 쇼콜라">
+                    <img src="img/canele.png" alt="까눌레">
+                    <img src="img/cake.png" alt="케이크">
+                </div>
+                <div class="slideShowBtn" onclick="showNextSlide()">
+                    <img src="img/rightBtn.png" alt="다음">
+                </div>
+            </section>
+        </article>
+
+        <div class="intro">
+    </div>
+        intro
     </div>
 </body>
 </html>
