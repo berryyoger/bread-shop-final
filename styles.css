@@ -268,5 +268,10 @@ article > .titleBox > h3{
 }
 
 .intro{
-    height: 800px;
+    height: 300px;
+}
+
+footer{
+    height: 400px;
+    background-color: var(--bread);
 }

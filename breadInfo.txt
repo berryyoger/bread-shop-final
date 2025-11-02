@@ -1,0 +1,167 @@
+Homepage
+
+Meta title
+	•	{Brand} | Artisan Baguettes, Viennoiserie & Cakes
+
+Meta description
+	•	Slow-fermented baguettes, flaky croissants, pain au chocolat, canelés, and vanilla-bean cakes, baked fresh daily in {Neighborhood}. Pickup & local delivery.
+
+Long social/OG description
+	•	At {Brand} we mill-to-loaf with time and technique: 18–24-hour cold fermentation for crackly baguettes, real butter laminations for croissants and pain au chocolat, burnished canelés with custardy centers, and vanilla-bean cream cakes with an apple-jam ribbon. Baked fresh daily in {Neighborhood}; pre-order, pickup, or local delivery.
+
+On-page intro (80–100 words)
+	•	{Brand} is a small, early-rising bakery dedicated to honest ingredients and classic methods. Our doughs ferment slowly for depth of flavor and digestibility. We hand-score every baguette, laminate with cultured butter for airy layers, and bake canelés until their shells sing. For something soft and fragrant, try our vanilla-bean cream cake with a thin line of apple jam. Fresh batches roll out through the day—reserve online for pickup or stop by for warm loaves.
+
+KR 번역
+	•	메타 제목: {Brand} | 바게트·비에노와즈리·케이크 전문
+	•	메타 설명: {Neighborhood}에서 매일 굽는 장시간 발효 바게트, 크루아상, 뺑오쇼콜라, 카눌레, 바닐라빈 케이크. 픽업·근거리 배달.
+	•	긴 OG 설명: {Brand}는 시간과 기술로 맛을 빚습니다. 18–24시간 저온 발효 바게트, 발효 버터로 만든 크루아상·뺑오쇼콜라, 커스터드처럼 촉촉한 속의 카눌레, 사과 잼 리본이 들어간 바닐라빈 크림 케이크까지. {Neighborhood} 매일 갓 구움—사전 예약, 픽업, 배달 가능.
+	•	온페이지 소개: {Brand}는 좋은 재료와 정통 방식에 집중하는 작은 동네 빵집입니다. 천천히 발효해 소화가 편하고 풍미가 깊습니다. 모든 바게트는 수작업 칼집, 크루아상은 발효 버터로 결을 살리고, 카눌레는 껍질이 바삭해질 때까지 구워요. 바닐라빈 크림과 사과 잼이 들어간 케이크도 추천합니다. 하루 여러 번 갓 구움—온라인 예약 또는 매장 방문 환영.
+
+⸻
+
+Product pages
+
+1) Baguette
+
+SEO title
+	•	Classic Baguette | Crackly Crust, Open Crumb
+
+Meta description
+	•	Hand-scored, slow-fermented baguette with a thin crackly crust and light, open crumb. Baked fresh several times daily in {Neighborhood}.
+
+Long social/OG description
+	•	Our signature baguette rests for up to 24 hours before baking, developing a nutty aroma and a paper-thin, shattering crust. Each loaf is hand-shaped and scored to lift evenly in the oven, giving you a tender, open crumb that pairs beautifully with butter, cheese, or soup. Fresh batches all day at {Brand} in {Neighborhood}—reserve to avoid sell-outs.
+
+On-page intro (70–90 words)
+	•	We keep it simple: unbleached flour, water, salt, and time. The dough ferments slowly for flavor and digestibility, then gets shaped, proofed, and scored by hand. High heat and steam finish the job, yielding a slender loaf with a crackly crust and a soft interior. Slice for sandwiches or tear and share—it’s our most versatile bread.
+
+Alt & caption
+	•	Alt: “Hand-scored classic baguette with thin, crackly crust.”
+	•	Caption: Slow-fermented 18–24 h, baked with steam for shattering crust and open crumb.
+
+KR
+	•	SEO 제목: 클래식 바게트 | 바삭한 껍질, 촉촉한 속결
+	•	메타 설명: 수작업 칼집과 장시간 발효로 완성한 정통 바게트. 얇고 바삭한 크러스트, 가벼운 속결. {Neighborhood}에서 하루 여러 번 갓 구움.
+	•	긴 OG: 반죽을 최대 24시간 휴지해 고소한 향과 얇은 크러스트를 만들었습니다. 손으로 성형·칼집 후 스팀과 고열로 구워 촉촉한 속결을 완성합니다. {Neighborhood}의 {Brand}—품절 전 예약 추천.
+	•	온페이지: 밀·물·소금·시간. 단순한 재료를 천천히 발효해 소화가 편하고 풍미가 깊습니다. 고열과 스팀으로 구워 바삭한 껍질과 부드러운 속을 살렸어요. 샌드위치부터 식사빵까지 만능.
+	•	Alt: “얇고 바삭한 껍질의 수작업 칼집 바게트.”
+	•	캡션: 18–24시간 저온 발효, 스팀 오븐 구움.
+
+⸻
+
+2) Croissant
+
+SEO title
+	•	Butter Croissant | 27 Layers, Golden & Airy
+
+Meta description
+	•	Real cultured-butter croissant with visible honeycomb layers, caramelized outside and feather-light inside. Best warm within hours of bake.
+
+Long social/OG description
+	•	Laminated over multiple turns with cultured butter, our croissant bakes to a deep golden sheen. The exterior crackles, the interior opens into a delicate honeycomb, and the aroma hints at toffee and cream. Enjoy plain or with jam; reheat at 180 °C for 3–5 minutes for café-fresh crispness.
+
+On-page intro (70–90 words)
+	•	We keep the dough cool and the butter colder. After a series of careful folds, the layers puff dramatically in the oven, creating a crisp shell and airy interior. It’s rich without heaviness, perfect on its own or paired with coffee.
+
+Alt & caption
+	•	Alt: “Golden butter croissant showing honeycomb layers.”
+	•	Caption: Cultured-butter lamination; caramelized crust, airy crumb.
+
+KR
+	•	SEO 제목: 버터 크루아상 | 27겹, 황금빛 결
+	•	메타 설명: 발효 버터로 만든 크루아상. 겉은 바삭·속은 벌집처럼 가벼움. 갓 구운 후 몇 시간 내가 가장 맛있습니다.
+	•	긴 OG: 차갑게 유지한 반죽과 버터를 여러 번 접어 층을 만들고, 오븐에서 풍성하게 부풀립니다. 겉은 카라멜라이즈, 속은 공기처럼 가볍고 향은 토피·크림을 떠올리게 해요. 180 °C 3–5분 재가열 추천.
+	•	Alt/캡션: “벌집 결이 보이는 황금빛 크루아상.” / 발효 버터 라미네이션.
+
+⸻
+
+3) Pain au Chocolat
+
+SEO title
+	•	Pain au Chocolat | Dark Chocolate, Crisp Layers
+
+Meta description
+	•	Flaky laminated pastry with two dark-chocolate batons nestled inside. Lightly melted center, crisp edges; baked fresh daily.
+
+Long social/OG description
+	•	Real butter layers cradle dual bars of dark chocolate for a balanced bite—gentle melt, clean snap, and a whisper of cocoa bitterness. Perfect warm, with coffee or milk. Limited runs throughout the morning; preorder recommended.
+
+On-page intro (60–80 words)
+	•	We use high-cacao couverture for a deep flavor that doesn’t overwhelm the pastry. The result is crisp, buttery layers around a soft, just-melted core. A favorite for breakfast and afternoon treat alike.
+
+Alt & caption
+	•	Alt: “Crisp pain au chocolat with dark chocolate peeking out.”
+	•	Caption: Dark-chocolate batons wrapped in buttery layers.
+
+KR
+	•	SEO 제목: 뺑오쇼콜라 | 다크 초콜릿·바삭한 결
+	•	메타 설명: 진한 다크 초콜릿 바를 감싼 바삭한 페이스트리. 중심은 살짝 녹고 가장자리는 바삭. 매일 갓 구움.
+	•	긴 OG: 버터 결 사이로 두 줄의 다크 초콜릿이 들어가 균형 잡힌 단맛과 깔끔한 쌉싸름함을 전합니다. 아침·티타임에 제격. 한정 수량—사전 예약 추천.
+	•	Alt/캡션: “초콜릿이 살짝 보이는 바삭한 뺑오쇼콜라.” / 하이 카카오 쿠버처 사용.
+
+⸻
+
+4) Canelé (Bordeaux)
+
+SEO title
+	•	Canelé de Bordeaux | Burnished Shell, Custard Heart
+
+Meta description
+	•	Rum-vanilla scented canelé with a deeply caramelized shell and tender, custardy center. Chewy, crackly, perfectly bittersweet.
+
+Long social/OG description
+	•	Baked in copper molds until mahogany brown, our canelé balances textures: a lacquered, crackly shell outside and a softly set custard within. Aromas of vanilla and a hint of rum make each bite complex and memorable. Limited weekend batches; best day-of.
+
+On-page intro (60–80 words)
+	•	We season the batter a day ahead, then bake hot for the signature contrast. Expect a gentle chew, a crisp edge, and a custard center that holds its shape.
+
+Alt & caption
+	•	Alt: “Mahogany-brown canelé with ridged, glossy shell.”
+	•	Caption: Copper-mold baked; rum-vanilla aroma, custardy center.
+
+KR
+	•	SEO 제목: 카눌레 | 구릿빛 껍질·커스터드 속
+	•	메타 설명: 럼·바닐라 향, 카라멜라이즈된 껍질과 촉촉한 속의 조화. 씹는 맛과 바삭함을 동시에.
+	•	긴 OG: 구리 틀에 구워 바삭하게 캐러멜화된 껍질과 촉촉한 커스터드 속을 구현했습니다. 한 입마다 바닐라와 은은한 럼 향이 퍼집니다. 주말 한정—당일 권장.
+	•	Alt/캡션: “유광의 구릿빛 껍질을 지닌 카눌레.” / 구리틀 고열 베이킹.
+
+⸻
+
+5) Vanilla-Bean Cream Cake (Apple Jam Ribbon)
+
+SEO title
+	•	Vanilla-Bean Cream Cake | Apple Jam Ribbon
+
+Meta description
+	•	Soft sponge layered with vanilla-speckled cream and a thin apple-jam stripe, topped with a petite mint leaf. Light, fragrant, not too sweet.
+
+Long social/OG description
+	•	A tender sponge anchors two classic flavors: real vanilla-bean cream—speckled and aromatic—and a bright apple-jam ribbon for gentle fruit acidity. Finished with a small mint leaf, it’s a graceful slice for birthdays, tea time, or an after-dinner treat. Whole cakes available by preorder.
+
+On-page intro (60–80 words)
+	•	We whip the cream with real vanilla beans for perfume without heaviness, then add a narrow line of apple jam between sheets for balance. The result is elegant and not overly sweet.
+
+Alt & caption
+	•	Alt: “Vanilla-bean cake slice with apple jam ribbon and mint.”
+	•	Caption: Vanilla-speckled cream; thin, glossy apple-jam layer.
+
+KR
+	•	SEO 제목: 바닐라빈 크림 케이크 | 사과 잼 리본
+	•	메타 설명: 바닐라빈 크림과 얇은 사과 잼 레이어가 들어간 부드러운 시트. 향긋하고 달지 않음.
+	•	긴 OG: 바닐라빈을 넣어 향을 살린 크림과 산뜻한 사과 잼 리본이 조화를 이루는 우아한 슬라이스. 티타임·기념일에 잘 어울립니다. 홀 케이크는 예약 제작.
+	•	Alt/캡션: “민트 잎을 올린 바닐라빈 케이크 슬라이스.” / 사과 잼 얇은 레이어.
+
+⸻
+
+Local SEO footer (optional, 2–3 sentences)
+
+EN
+	•	Find us a short walk from {Landmark} in {Neighborhood}. Open Tue–Sun from 7:30 AM. Same-day pickup and limited local delivery available.
+
+KR
+	•	{Neighborhood} {Landmark}에서 도보 몇 분. 화–일 7:30 오픈. 당일 픽업 및 근거리 배달 가능.
+
+⸻
+
+If you share brand name, neighborhood, and hours, I’ll tailor all titles, descriptions, and schema (JSON-LD for LocalBusiness/Product/FAQ) specifically for your shop.

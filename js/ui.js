@@ -27,25 +27,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 //slide show
 const slides = document.querySelectorAll("#slideshow img");
-    let current = 0;
-
-    function showNextSlide() {
-        slides[current].classList.remove("active");
-        current = (current + 1) % slides.length;
-        slides[current].classList.add("active");
-    }
-
-    function showPastSlide() {
-            slides[current].classList.remove("active");
-            if(current!=0){
-                current = (current - 1) % slides.length;
-                slides[current].classList.add("active");
-            }
-            else{//current=0
-                current = current + slides.length - 1
-                slides[current].classList.add("active");
-            }
-    }
+const breadList = [baguette, croissant, PAC, canele, creamCake];
+let current = 0;
 
 function slideBrdInfo(bread){
     let brdName = document.querySelector("#brdName");
@@ -55,5 +38,28 @@ function slideBrdInfo(bread){
     brdExplain.innerText = bread.onPage
 }
 
+function showNextSlide() {
+    slides[current].classList.remove("active");
+    current = (current + 1) % slides.length;
+    slides[current].classList.add("active");
+    slideBrdInfo(breadList[current])
+}
+
+function showPastSlide() {
+        slides[current].classList.remove("active");
+        if(current!=0){
+            current = (current - 1) % slides.length;
+            slides[current].classList.add("active");
+            slideBrdInfo(breadList[current])
+        }
+        else{//current=0
+            current = current + slides.length - 1
+            slides[current].classList.add("active");
+            slideBrdInfo(breadList[current])
+        }
+}
+
+
+
 slideBrdInfo(baguette)
-// setInterval (showNextSlide, 5000);
+setInterval (showNextSlide, 5000);
