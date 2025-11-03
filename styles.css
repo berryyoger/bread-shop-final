@@ -1,277 +1,318 @@
 @font-face {
-    font-family: 'YeogiOttaeJalnan';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
-    font-weight: normal;
-    font-display: swap;
+  font-family: "YeogiOttaeJalnan";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff")
+    format("woff");
+  font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'GanaChocolate';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ghanachoco.woff') format('woff');
-    font-weight: normal;
-    font-display: swap;
+  font-family: "GanaChocolate";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ghanachoco.woff")
+    format("woff");
+  font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Thin.woff2') format('woff2');
-    font-weight: 100;
-    font-display: swap;
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Thin.woff2")
+    format("woff2");
+  font-weight: 100;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraLight.woff2') format('woff2');
-    font-weight: 200;
-    font-display: swap;
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraLight.woff2")
+    format("woff2");
+  font-weight: 200;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2') format('woff2');
-    font-weight: 300;
-    font-display: swap;
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2') format('woff2');
-    font-weight: 400;
-    font-display: swap;
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-display: swap;
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2') format('woff2');
-    font-weight: 600;
-    font-display: swap;
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-display: swap;
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraBold.woff2') format('woff2');
-    font-weight: 800;
-    font-display: swap;
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraBold.woff2")
+    format("woff2");
+  font-weight: 800;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Black.woff2') format('woff2');
-    font-weight: 900;
-    font-display: swap;
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Black.woff2")
+    format("woff2");
+  font-weight: 900;
+  font-display: swap;
 }
 
-:root{
-    --bread : rgb(40, 11, 0);
-    --breadBright : rgba(249, 243, 231);
+:root {
+  --bread: rgb(40, 11, 0);
+  --breadBright: rgba(249, 243, 231);
 }
 
-html{
-    font-family: 'Pretendard';
+html {
+  font-family: "Pretendard";
 }
 
-header{
-    background-color: rgba(249, 243, 231, 0.8);
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    margin-bottom: 3rem;
-    font-weight: 500;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+header {
+  background-color: rgba(249, 243, 231, 0.8);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin-bottom: 3rem;
+  font-weight: 500;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    overflow-x: hidden;
-    background-image: url(img/bg.png);
-    background-position: top;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: auto;
-    color: var(--bread);
-
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    user-select:none
+.loginbox {
+  grid-gap: 40px;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
 }
 
-a{
-    text-decoration: none;
-    color: var(--bread);
+.loginbox > a {
+  width: 100;
+  text-align: center;
 }
 
-nav{
-    height: 70px;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 0.2fr 0.6fr 0.2fr;
-    text-align: center;
-    column-gap: 4rem;
-    justify-content: space-around;
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  overflow-x: hidden;
+  background-image: url(img/bg.png);
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: auto;
+  color: var(--bread);
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; /*enable drag*/
+
+  -ms-overflow-style: none; /*hide scrollbar*/
 }
 
-nav > div{
-    display : flex;
-    justify-content: center;
-    align-items: center;
+::-webkit-scrollbar {
+  display: none;
+} /*hide scrollbar*/
+
+a {
+  text-decoration: none;
+  color: var(--bread);
 }
 
-nav > .brand{
-    font-size: 2rem;
-    cursor: pointer;
+nav {
+  height: 70px;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 0.2fr 0.6fr 0.2fr;
+  text-align: center;
+  column-gap: 4rem;
+  justify-content: space-around;
 }
 
-nav > .navA{
-    display: grid;
-    grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
-    font-size: 1.6rem;
+nav > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-nav > .loginbox{
-    display: grid;
-    grid-template-columns: 0.5fr 0.5fr;
+nav > .brand {
+  font-size: 2rem;
+  cursor: pointer;
 }
 
-.container{
-    width: 100;
-    padding-left: 6rem;
-    padding-right: 6rem;
+nav > .navA {
+  display: grid;
+  grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+  font-size: 1.5rem;
 }
 
-article{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+nav > .navA > a {
+  transition-property: all;
+  transition-duration: 0.3s;
 }
 
-article > .titleBox{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 570px;
+nav > .navA > a:hover {
+  font-size: 2rem;
+  transition-property: all;
+  transition-duration: 0.3s;
 }
 
-article > .titleBox > h1{
-    font-family: GanaChocolate;
-    font-size: 5rem;
-    margin: 0;
+nav > .loginbox {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
 }
 
-article > .titleBox > h2{
-    color: var(--breadBright);
-    margin-bottom: 0;
-    font-weight: 600
+.container {
+  width: 100;
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
-article > .titleBox > h3{
-    color: var(--bread);
-    margin-top: 0;
-    font-weight: 200
+article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.slideShowBox{
-    width: 700px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+article > .titleBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 570px;
 }
 
-.slideShowBtn{
-    display: flex;
-    height: 500px;
-    width: 80px;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    border-radius: 10px;
-    transition-property: all;
-    transition-duration: 0.3s;
+article > .titleBox > h1 {
+  font-family: GanaChocolate;
+  font-size: 5rem;
+  margin: 0;
 }
 
-.slideShowBtn:hover{
-    background-color: rgba(0,0,0,0.16);
-    transition-property: all;
-    transition-duration: 0.3s;
+article > .titleBox > h2 {
+  color: var(--breadBright);
+  margin-bottom: 0;
+  font-weight: 600;
 }
 
-.slideShowBtn > img{
-    height: 80px;
-    width: 80px;
+article > .titleBox > h3 {
+  color: var(--bread);
+  margin-top: 0;
+  font-weight: 200;
+}
+
+.slideShowBox {
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.slideShowBtn {
+  display: flex;
+  height: 500px;
+  width: 80px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 10px;
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+
+.slideShowBtn:hover {
+  background-color: rgba(0, 0, 0, 0.16);
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+
+.slideShowBtn > img {
+  height: 80px;
+  width: 80px;
 }
 
 #slideshow {
-    position: relative;
-    width: 500px;
-    height: 500px;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px Urgba(0,0,0,0.2);
-    }
+  position: relative;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px Urgba(0, 0, 0, 0.2);
+}
 #slideshow > img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 1.5s ease-in-out;}
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
 #slideshow > img.active {
-    opacity: 1;
-    }
-
-.brdInfo{
-    height: 480px; /*500px - 20px(padding-top)*/
-    width: 400px; /*500px - 100px(padding-left&right)*/
-    position: absolute;
-    z-index: 2;
-    transition-property: all;
-    transition-duration: 0.3s;
-    opacity: 0;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 20px;
+  opacity: 1;
 }
 
-.brdInfo:hover{
-    opacity: 1;
-    background-color: rgba(29, 11, 0, 0.6);
-    transition-property: all;
-    transition-duration: 0.3s;
+.brdInfo {
+  height: 480px; /*500px - 20px(padding-top)*/
+  width: 400px; /*500px - 100px(padding-left&right)*/
+  position: absolute;
+  z-index: 2;
+  transition-property: all;
+  transition-duration: 0.3s;
+  opacity: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
 }
 
-.brdInfo > h1{
-    color: var(--breadBright);
-    font-family: GanaChocolate;
-    font-size: 35pt;
+.brdInfo:hover {
+  opacity: 1;
+  background-color: rgba(29, 11, 0, 0.6);
+  transition-property: all;
+  transition-duration: 0.3s;
 }
 
-.brdInfo > h3{
-    color: var(--breadBright);
-    font-family: 'Pretendard';
-    font-weight: 300;
-    font-size: 15pt;
+.brdInfo > h1 {
+  color: var(--breadBright);
+  font-family: GanaChocolate;
+  font-size: 35pt;
 }
 
-.intro{
-    height: 300px;
+.brdInfo > h3 {
+  color: var(--breadBright);
+  font-family: "Pretendard";
+  font-weight: 300;
+  font-size: 15pt;
 }
 
-footer{
-    height: 400px;
-    background-color: var(--bread);
+.intro {
+  height: 300px;
+}
+
+footer {
+  height: 400px;
+  background-color: var(--bread);
 }
