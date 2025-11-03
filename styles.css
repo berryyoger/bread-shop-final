@@ -78,6 +78,7 @@
 :root{
     --bread : rgb(40, 11, 0);
     --breadBright : rgba(249, 243, 231);
+    --donut : rgb(243, 208, 138);
 }
 
 html{
@@ -99,7 +100,7 @@ body{
     flex-direction: column;
     margin: 0;
     overflow-x: hidden;
-    background-image: url(img/bg.png);
+    background-image: url(assets/bg.png);
     background-position: top;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -273,5 +274,8 @@ article > .titleBox > h3{
 
 footer{
     height: 400px;
-    background-color: var(--bread);
+    background-color: var(--donut);
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
