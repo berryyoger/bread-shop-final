@@ -3,7 +3,7 @@ function headers() {
   const h = document.createElement("header");
   h.innerHTML = `
     <nav>
-        <div onclick="location.href='index.html'" class="brand">🥐Bread Shop</div>
+        <div onclick="location.href='index_36.html'" class="brand">🥐Bread Shop</div>
         <div class="navA">
             <a href="/bakery.html">Bakery</a>
             <a href="/desserts.html">Desserts</a>
@@ -95,3 +95,12 @@ function showPastSlide() {
 
 slideBrdInfo(baguette);
 setInterval(showNextSlide, 5000);
+
+//New Bread time
+const brdTimeSign = document.querySelector("#brdTime")
+let time = new Date()
+function newBreadTime() {
+  
+}
+
+setInterval(brdTimeSign.innerText = time, 1000)
