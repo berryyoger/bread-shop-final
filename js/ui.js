@@ -1,14 +1,14 @@
 //header
-function headers() {
-  const h = document.createElement("header");
+function headers() {//header를 출력하는 함수.
+  const h = document.createElement("header");//header 태그 생성.
   h.innerHTML = `
     <nav>
         <div onclick="location.href='index_36.html'" class="brand">🥐Bread Shop</div>
         <div class="navA">
             <a href="/bakery.html">Bakery</a>
             <a href="/desserts.html">Desserts</a>
-            <a href="/etc.html">E.T.C.</a>
             <a href="/myCart.html">My Cart</a>
+            <a href="/about us.html">About Us</a>
             <a href="/contactUs.html">Contact Us</a>
         </div>
         <div class="loginbox">
@@ -16,12 +16,12 @@ function headers() {
             <a href="/signUp.html">Sign Up</a>
         </div>
     </nav>
-    `;
-  document.body.prepend(h);
+    `;//header 태그 내 html 선언.
+  document.body.prepend(h);//body 태그의 앞에 header 위치.
 }
 
-function footers() {
-    const footer = document.createElement("footer");
+function footers() {//footer를 출력하는 함수.
+    const footer = document.createElement("footer");//footer 태그 생성
     footer.innerHTML = `
     <div class="footerCwuNav" style="overflow: visible">
     <h2>Connect with us</h2>
@@ -49,8 +49,8 @@ function footers() {
     </ul>
     <p>©&thinsp;2025&thinsp;—&thinsp;Bread Shop</p>
 </div>
-      `;
-    document.body.append(footer);
+      `;//푸터 태그 내 html 선언.
+    document.body.append(footer);//body 태그 뒤에 footer 위치.
   }
 
 
@@ -59,48 +59,62 @@ document.addEventListener("DOMContentLoaded", () => {
   footers();
 });
 
-//slide show
+//slide show (slide show 예제 활용)
 const slides = document.querySelectorAll("#slideshow img");
-const breadList = [baguette, croissant, PAC, canele, creamCake];
-let current = 0;
+const breadList = [baguette, croissant, PAC, canele, creamCake];//hover에 상품 설명을 띄우는 로직을 위한 array. 해당 품목은 breadInfo.js에 object로 선언되어있음.
+let current = 0; //현재 슬라이드의 번호
 
-function slideBrdInfo(bread) {
-  let brdName = document.querySelector("#brdName");
-  let brdExplain = document.querySelector("#brdExplain");
+function slideBrdInfo(bread) {//상품 설명을 바꾸는 함수
+  let brdName = document.querySelector("#brdName");//상품명
+  let brdExplain = document.querySelector("#brdExplain");//상품 설명
 
-  brdName.innerText = bread.name;
-  brdExplain.innerText = bread.onPage;
+  brdName.innerText = bread.name;//상품명 inner text 변경
+  brdExplain.innerText = bread.onPage;//상품 설명 inner text 변경
 }
 
-function showNextSlide() {
-  slides[current].classList.remove("active");
-  current = (current + 1) % slides.length;
-  slides[current].classList.add("active");
-  slideBrdInfo(breadList[current]);
+function showNextSlide() {//슬라이드 쇼의 다음 img를 보여주는 함수
+  slides[current].classList.remove("active");//현재 슬라이드의 active class를 삭제.
+  current = (current + 1) % slides.length;//다음 슬라이드 번호를 가져오는 로직. 단순 + 1에 나머지를 구하는 %를 활용하여 array의 length 즉, 마지막 슬라이드쇼에 해당하면 0을 반환함.
+  slides[current].classList.add("active");//바뀐 슬리이드(이 순간에는 현재 슬라이드)에 active class 부여.
+  slideBrdInfo(breadList[current]);//위에 선언한 삼품 설명을 바꾸는 함수에 현재 슬라이드 번호를 입력. -> 해당하는 상품명, 상품 설명을 띄움.
 }
 
-function showPastSlide() {
-  slides[current].classList.remove("active");
-  if (current != 0) {
+function showPastSlide() {//슬라이드 쇼의 이전 img를 보여주는 함수
+  slides[current].classList.remove("active");//현재 슬라이드의 active class를 삭제.
+  if (current != 0) {//현재 슬라이드쇼가 첫번째가 아닐 때. 위 showNextSlide와 똑같이 작동.
     current = (current - 1) % slides.length;
     slides[current].classList.add("active");
     slideBrdInfo(breadList[current]);
-  } else {
-    //current=0
-    current = current + slides.length - 1;
-    slides[current].classList.add("active");
-    slideBrdInfo(breadList[current]);
+  }
+  else {//단순하게 현재 슬라이드에 -1을 하면 현재 슬라이드 번호가 음수가 되면서 오류가 발생하므로 예외처리.
+    current = current + slides.length - 1;//현재 슬라이드가 0번이면 슬라이드 array의 길이를 더하고 -1하여 마지막 슬라이드 번호를 반환.
+    slides[current].classList.add("active");//바뀐 슬라이드(이 순간에는 마지막 슬라이드(마지막 번호))에 active class 부여.
+    slideBrdInfo(breadList[current]);//위에 선언한 삼품 설명을 바꾸는 함수에 현재 슬라이드 번호를 입력. -> 해당하는 상품명, 상품 설명을 띄움.
   }
 }
 
-slideBrdInfo(baguette);
-setInterval(showNextSlide, 5000);
+slideBrdInfo(baguette);//페이지 로드 직후에는 슬라이드 쇼에 상품명/설명이 들어가 있지 않으니 임의로 첫번쨰 상품만 상품명/설명을 입력.
+setInterval(showNextSlide, 5000);//5초에 한 번씩 다음 슬라이드를 보여주는 함수를 실행.
 
-//New Bread time
-const brdTimeSign = document.querySelector("#brdTime")
-let time = new Date()
-function newBreadTime() {
-  
+//New Bread time (6.1.3 내장객체 중 Date 객체 사용)(6.3예제 활용)
+const brdTimeSign = document.querySelector("#brdTime")//문구가 출력될 div 호출.
+function newBreadTime() {//문구에 사용될 시간을 계산하는 함수.
+  let cTime = new Date() //Date 호출
+  let hour = cTime.getHours(), min = cTime.getMinutes(); sec = cTime.getSeconds()// 현재 시각, 분, 초 호출
+
+    if(hour>12){//(12시에 빵이 나온다고 하면, 13,14시 등 12시 이후는 값이 음수가 되니 예외처리.)
+      let leftedHour = 35 - hour//12에 24를 더하는 것이 아닌, 24를 더하고 1을 빼야 분,초와 맞음.
+      leftedMin = 60 - min;//남은 분 계산
+      leftedSec = 60 - sec;//남은 초 계산
+      brdTimeSign.innerText = "🥐새로운 빵이 나오기까지" + leftedHour + "시간" + leftedMin + "분" + leftedSec + "초 남았습니다.🍞"//문구 출력
+    }
+    else{
+      let leftedHour = 12 - hour;//현재 시간이 00시 이후, 12시 이전일 때. 위와 같이 처리.
+      leftedMin = 60 - min;
+      leftedSec = 60 - sec;
+      brdTimeSign.innerText = "🥐새로운 빵이 나오기까지" + leftedHour + "시간" + leftedMin + "분" + leftedSec + "초 남았습니다.🍞"
+    }
 }
+setInterval(newBreadTime, 1000)
 
-setInterval(brdTimeSign.innerText = time, 1000)
+

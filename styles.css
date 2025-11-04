@@ -151,6 +151,9 @@ body {
   height: auto;
   color: var(--bread);
 
+  padding-left: 5rem;
+  padding-right: 5rem;
+
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -212,12 +215,19 @@ nav > .loginbox {
 }
 
 #brdTime{
-  width: 400px;
-  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 50px;
+  align-items: center;
+
+  font-size: 15pt;
+  color: var(--breadBright);
 }
 
 .container {
-  width: 100;
+  width: 100%;
   padding-left: 6rem;
   padding-right: 6rem;
 }
