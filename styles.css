@@ -86,10 +86,10 @@
   font-display: swap;
 }
 
-:root{
-    --bread : rgb(40, 11, 0);
-    --breadBright : rgba(249, 243, 231);
-    --donut : rgb(243, 208, 138);
+:root {
+  --bread: rgb(40, 11, 0);
+  --breadBright: rgba(249, 243, 231);
+  --donut: rgb(243, 208, 138);
 }
 
 html {
@@ -106,23 +106,22 @@ header {
   z-index: 10;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  overflow-x: hidden;
+  background-image: url(assets/bg.png);
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: auto;
+  color: var(--bread);
 
-body{
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    overflow-x: hidden;
-    background-image: url(assets/bg.png);
-    background-position: top;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: auto;
-    color: var(--bread);
-
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    user-select:none
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .loginbox {
@@ -130,7 +129,6 @@ body{
   padding: 20px;
   text-align: center;
   justify-content: center;
-
 }
 
 .loginbox > a {
@@ -214,7 +212,7 @@ nav > .loginbox {
   grid-template-columns: 0.5fr 0.5fr;
 }
 
-#brdTime{
+#brdTime {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -345,17 +343,21 @@ article > .titleBox > h3 {
   font-size: 15pt;
 }
 
-footer{
-    position: relative;
-    bottom: 0;
-    width: 100vw;
-    height: 400px;
-    background-color: var(--donut);
-    padding-top: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100vw;
+  height: 400px;
+  background-color: var(--donut);
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .intro {
-    height: 300px;
-  }
+  height: 300px;
+}
+
+.link > img {
+  height: 2rem;
+}
