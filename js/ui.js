@@ -6,8 +6,8 @@ function headers() {
     <nav>
         <div onclick="location.href='index_36.html'" class="brand">🥐Bread Shop</div>
         <div class="navA">
-            <a href="/bakery.html">Bakery</a>
-            <a href="/desserts.html">Desserts</a>
+            <a href="/shop.html">Shop</a>
+            <a href="/purchase.html">Purchase</a>
             <a href="/myCart.html">My Cart</a>
             <a href="/aboutUs.html">About Us</a>
             <a href="/contactUs.html">Contact Us</a>
