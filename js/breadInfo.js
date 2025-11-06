@@ -107,3 +107,14 @@ const donut = {
   onPage:
     "We fry the dough until golden and light, then coat it with a thin sugar glaze that sets to a gentle shine. Soft, airy, and not too sweet—simple and classic.",
 };
+
+const muffin = {
+  var: "muffin",
+  name: "Blueberry Muffin",
+  cost: 3200,
+  remain: 18,
+  title: "Moist Crumb, Sugar Top",
+  meta: "Buttery muffin studded with blueberries and finished with a light crunchy sugar top.",
+  onPage:
+    "We fold juicy blueberries into a vanilla-scented batter and bake until the dome turns golden. The crumb stays soft and moist, while a sprinkle of coarse sugar adds a gentle crunch. Great for breakfast or a quick snack.",
+};
