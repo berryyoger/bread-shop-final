@@ -58,9 +58,10 @@ function footers() {
 document.addEventListener("DOMContentLoaded", () => {
   headers();
   footers();
-  slide();
-  shop();//shop page에 product를 생성하는 함수 집합
-});//DOM 로딩 시 함수 실행. 페이지 실행 시 실행되는 함수들.
+  if (document.querySelector(".shopContainer")) shop();   // shop 페이지에서만
+  if (document.querySelector("#slideshow")) slide();      // 슬라이드가 있을 때만
+});
+
 
 //slide show (slide show 예제 활용)
 let slides = document.querySelectorAll("#slideshow img");
@@ -84,7 +85,7 @@ function slideBrdInfo(bread) {
   let brdName = document.querySelector("#brdName"); //상품명
   let brdExplain = document.querySelector("#brdExplain"); //상품 설명
 
-  brdName.innerText = bread.var; //상품명 inner text 변경
+  brdName.innerText = bread.name//상품명 inner text 변경
   brdExplain.innerText = bread.onPage; //상품 설명 inner text 변경
 } 
 
