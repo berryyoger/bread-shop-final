@@ -1,39 +1,90 @@
 const baguette = {
-    name: "Baguette",
-    title: "Classic Baguette | Crackly Crust, Open Crumb",
+    var: "baguette",
+    name: "Classic Baguette",
+    cost: 3000,
+    remain : 8,
+    title: "Crackly Crust, Open Crumb",
     meta: "Hand-scored, slow-fermented baguette with a thin crackly crust and light, open crumb.",
     onPage:
       "We keep it simple: unbleached flour, water, salt, and time. The dough ferments slowly for flavor and digestibility, then gets shaped, proofed, and scored by hand. High heat and steam finish the job, yielding a slender loaf with a crackly crust and a soft interior. Slice for sandwiches or tear and share—it’s our most versatile bread."
   };
   
-  const croissant = {
-    name: "Croissant",
-    title: "Butter Croissant | 27 Layers, Golden & Airy",
-    meta: "Real cultured-butter croissant with visible honeycomb layers, caramelized outside and feather-light inside. Best warm within hours of bake.",
-    onPage:
-      "We keep the dough cool and the butter colder. After a series of careful folds, the layers puff dramatically in the oven, creating a crisp shell and airy interior. It’s rich without heaviness, perfect on its own or paired with coffee."
-  };
-  
-  const PAC = {
-    name: "Pain au chocolat",
-    title: "Pain au Chocolat | Dark Chocolate, Crisp Layers",
-    meta: "Flaky laminated pastry with two dark-chocolate batons nestled inside. Lightly melted center, crisp edges; baked fresh daily.",
-    onPage:
-      "We use high-cacao couverture for a deep flavor that doesn’t overwhelm the pastry. The result is crisp, buttery layers around a soft, just-melted core. A favorite for breakfast and afternoon treat alike."
-  };
-  
-  const canele = {
-    name: "Canelè",
-    title: "Canelé de Bordeaux | Burnished Shell, Custard Heart",
-    meta: "Rum-vanilla scented canelé with a deeply caramelized shell and tender, custardy center. Chewy, crackly, perfectly bittersweet.",
-    onPage:
-      "We season the batter a day ahead, then bake hot for the signature contrast. Expect a gentle chew, a crisp edge, and a custard center that holds its shape."
-  };
-  
-  const creamCake = {
-    name: "Cream-cake",
-    title: "Vanilla-Bean Cream Cake | Apple Jam Ribbon",
-    meta: "Soft sponge layered with vanilla-speckled cream and a thin apple-jam stripe, topped with a petite mint leaf. Light, fragrant, not too sweet.",
-    onPage:
-      "We whip the cream with real vanilla beans for perfume without heaviness, then add a narrow line of apple jam between sheets for balance. The result is elegant and not overly sweet."
-  };
+const croissant = {
+  var: "croissant",
+  name: "Croissant",
+  cost: 3500,
+  remain : 4,
+  title: "27 Layers, Golden & Airy",
+  meta: "Real cultured-butter croissant with visible honeycomb layers, caramelized outside and feather-light inside. Best warm within hours of bake.",
+  onPage:
+    "We keep the dough cool and the butter colder. After a series of careful folds, the layers puff dramatically in the oven, creating a crisp shell and airy interior. It’s rich without heaviness, perfect on its own or paired with coffee."
+};
+
+const PAC = {
+  var: "pac",
+  name: "Pain au chocolat",
+  cost: 4000,
+  remain : 5,
+  title: "Dark Chocolate, Crisp Layers",
+  meta: "Flaky laminated pastry with two dark-chocolate batons nestled inside. Lightly melted center, crisp edges; baked fresh daily.",
+  onPage:
+    "We use high-cacao couverture for a deep flavor that doesn’t overwhelm the pastry. The result is crisp, buttery layers around a soft, just-melted core. A favorite for breakfast and afternoon treat alike."
+};
+
+const canele = {
+  var: "canele",
+  name: "Canelè",
+  cost: 2000,
+  remain : 10,
+  title: "Burnished Shell, Custard Heart",
+  meta: "Rum-vanilla scented canelé with a deeply caramelized shell and tender, custardy center. Chewy, crackly, perfectly bittersweet.",
+  onPage:
+    "We season the batter a day ahead, then bake hot for the signature contrast. Expect a gentle chew, a crisp edge, and a custard center that holds its shape."
+};
+
+const creamCake = {
+  var: "creamCake",
+  name: "Vanilla-Bean Cream Cake",
+  cost: 5000,
+  remain : 3,
+  title: "Apple Jam Ribbon",
+  meta: "Soft sponge layered with vanilla-speckled cream and a thin apple-jam stripe, topped with a petite mint leaf. Light, fragrant, not too sweet.",
+  onPage:
+    "We whip the cream with real vanilla beans for perfume without heaviness, then add a narrow line of apple jam between sheets for balance. The result is elegant and not overly sweet."
+};
+
+const cookie = {
+  var: "cookie",
+  name: "Sea Salt Chocolate Chip Cookie",
+  cost: 2800,
+  remain: 24,
+  title: "Chewy Center, Crisp Edge",
+  meta:
+    "Fresh-baked chocolate chip cookie with a soft, chewy center, crisp edges, and puddles of dark chocolate finished with a pinch of sea salt.",
+  onPage:
+    "We brown the butter for gentle toffee notes, blend dark and semi-sweet chocolate, and rest the dough overnight for deeper flavor. Baked until the edges set while the center stays soft, then finished with flaky sea salt. Best the day it’s baked—rewarm 2–3 minutes for melty pockets."
+};
+
+const scone = {
+  var: "scone",
+  name: "Classic Butter Scone",
+  cost: 3200,
+  remain: 16,
+  title: "Buttery Crust, Tender Crumb",
+  meta:
+    "Golden-topped butter scone with a crisp edge and soft, fluffy center. Baked fresh daily; great with jam or clotted cream.",
+  onPage:
+    "We cut cold butter into the flour for flaky layers, keep the dough just mixed, and bake hot for a burnished top and moist crumb. Lightly sweet and richly buttery, it’s lovely on its own or with jam and clotted cream. Rewarm 2–3 minutes to refresh."
+};
+
+const madeleine = {
+  var: "madeleine",
+  name: "Classic Lemon Madeleine",
+  cost: 2400,
+  remain: 18,
+  title: "Shell-Shaped, Soft & Buttery",
+  meta:
+    "French madeleine with a light crisp edge and soft lemon-vanilla crumb. Baked fresh daily; perfect with tea.",
+  onPage:
+    "We brown the butter for a nutty aroma, add lemon zest and vanilla, then rest the batter before baking. The madeleine rises with a gentle dome and a fine, moist crumb. Enjoy warm or at room temperature; a light dusting of sugar highlights the buttery flavor."
+};

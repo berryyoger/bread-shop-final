@@ -58,21 +58,33 @@ function footers() {
 document.addEventListener("DOMContentLoaded", () => {
   headers();
   footers();
-});
+  // slideimgs();
+  shop();//shop page에 product를 생성하는 함수 집합
+});//DOM 로딩 시 함수 실행. 페이지 실행 시 실행되는 함수들.
 
 //slide show (slide show 예제 활용)
-const slides = document.querySelectorAll("#slideshow img");
-const breadList = [baguette, croissant, PAC, canele, creamCake]; //hover에 상품 설명을 띄우는 로직을 위한 array. 해당 품목은 breadInfo.js에 object로 선언되어있음.
+const slides = document.querySelectorAll("#slideshow");
+const breadList = [baguette, croissant, PAC, canele, creamCake, cookie, scone, madeleine]; //hover에 상품 설명을 띄우는 로직을 위한 array. 해당 품목은 breadInfo.js에 object로 선언되어있음.
 let current = 0; //현재 슬라이드의 번호
 
-function slideBrdInfo(bread) {
+function slideimgs() {//slide show의 img들을 넣는 함수.
+  for(i=0;i<breadList.length;i++){//breadList는 ui.js 66에서 선언됨. 66과 breadInfo.js에 object를 추가하기만 하면 slide show와 shop에 항목이 추가됨.
+    const img = document.createElement("img")
+    img.src = `assets/`+breadList[breadList.length-1-i].var+`.png`
+    img.alt = `${breadList[breadList.length-1-i].var}`
+    console.log(img)
+    document.querySelector("#slideshow").appendChild(img)
+  }
+}
+
+function slideBrdInfo(product) {
   //상품 설명을 바꾸는 함수
   let brdName = document.querySelector("#brdName"); //상품명
   let brdExplain = document.querySelector("#brdExplain"); //상품 설명
 
-  brdName.innerText = bread.name; //상품명 inner text 변경
-  brdExplain.innerText = bread.onPage; //상품 설명 inner text 변경
-}
+  brdName.innerText = product.var; //상품명 inner text 변경
+  brdExplain.innerText = product.onPage; //상품 설명 inner text 변경
+} 
 
 function showNextSlide() {
   //슬라이드 쇼의 다음 img를 보여주는 함수
@@ -138,3 +150,26 @@ function newBreadTime() {
   }
 }
 setInterval(newBreadTime, 1000);
+
+
+//shop.html scripts
+function product(bread) {//product를 출력하는 함수.breadInfo.js에 있는 상품 object 호출.
+  const product = document.createElement("div"); //div 태그 생성
+  product.classList.add("product")//생성한 div에 product class 부여
+  product.innerHTML = `
+    <img src="assets/`+bread.var+`.png" alt="`+bread.var+`">
+    <h1>`+bread.name+`</h1>
+    <h1 class="brdtitle">`+bread.title+`</h1>
+    <div class="costRemain">
+      <h2>`+bread.cost+`won</h2>
+      <h3>`+bread.remain+` Remains</h3>
+    </div>
+      `; //product 태그 내 html 선언.
+  document.querySelector(".shopContainer").prepend(product); //shopContainer 태그 뒤에 product 위치.
+}
+
+function shop() {//shop page에 product를 생성하는 함수들 실행.
+  for(i=0;i<breadList.length;i++){//breadList는 ui.js 66에서 선언됨.
+    product(breadList[breadList.length-1-i])//shop 페이지에 상품이 breadList array 순서대로 표시되게 역순으로 입력.
+  }
+}
