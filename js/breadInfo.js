@@ -88,3 +88,15 @@ const madeleine = {
   onPage:
     "We brown the butter for a nutty aroma, add lemon zest and vanilla, then rest the batter before baking. The madeleine rises with a gentle dome and a fine, moist crumb. Enjoy warm or at room temperature; a light dusting of sugar highlights the buttery flavor."
 };
+
+const financier = {
+  var: "financier",
+  name: "Brown Butter Financier",
+  cost: 2600,
+  remain: 18,
+  title: "Caramelized Edge, Tender Center",
+  meta:
+    "Classic French almond cake with brown-butter aroma, golden edges, and a moist, buttery crumb.",
+  onPage:
+    "We brown the butter for a nutty aroma, blend it with almond flour, and bake in small molds until the edges turn deep golden. The center stays soft and moist—perfect with tea or coffee."
+};

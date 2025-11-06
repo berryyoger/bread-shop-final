@@ -58,14 +58,14 @@ function footers() {
 document.addEventListener("DOMContentLoaded", () => {
   headers();
   footers();
-  if (document.querySelector(".shopContainer")) shop();   // shop 페이지에서만
-  if (document.querySelector("#slideshow")) slide();      // 슬라이드가 있을 때만
+  if (document.querySelector(".shopContainer")) shop();   // shop 페이지에서만 shop() 실행
+  if (document.querySelector("#slideshow")) slide();      // 슬라이드가 있을 때만 slide() 실행
 });
 
 
 //slide show (slide show 예제 활용)
 let slides = document.querySelectorAll("#slideshow img");
-const breadList = [baguette, croissant, PAC, canele, creamCake, cookie, scone, madeleine]; //hover에 상품 설명을 띄우는 로직을 위한 array. 해당 품목은 breadInfo.js에 object로 선언되어있음.
+const breadList = [baguette, croissant, PAC, canele, creamCake, cookie, scone, madeleine, financier]; //hover에 상품 설명을 띄우는 로직을 위한 array. 해당 품목은 breadInfo.js에 object로 선언되어있음.
 let current = 0; //현재 슬라이드의 번호
 
 function slide() {//img를 출력하는 함수.
