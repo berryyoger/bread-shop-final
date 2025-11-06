@@ -55,64 +55,52 @@ function footers() {
   document.body.append(footer); //body 태그 뒤에 footer 위치.
 }
 
-document.addEventListener("DOMContentLoaded", () => {//shop page에 product를 생성하는 함수 집합
+document.addEventListener("DOMContentLoaded", () => {
   headers();
   footers();
-  slideShow();
-  shop();
+  shop();//shop page에 product를 생성하는 함수 집합
 });//DOM 로딩 시 함수 실행. 페이지 실행 시 실행되는 함수들.
 
-
 //slide show (slide show 예제 활용)
-function slideShow() {
-  const breadList = [baguette, croissant, PAC, canele, creamCake, cookie, scone, madeleine]; //hover에 상품 설명을 띄우는 로직을 위한 array. 해당 품목은 breadInfo.js에 object로 선언되어있음.
-  let current = 0; //현재 슬라이드의 번호
+const slides = document.querySelectorAll("#slideshow img");
+const breadList = [baguette, croissant, PAC, canele, creamCake, cookie, scone, madeleine]; //hover에 상품 설명을 띄우는 로직을 위한 array. 해당 품목은 breadInfo.js에 object로 선언되어있음.
+let current = 0; //현재 슬라이드의 번호
 
-  for(i=0;i<breadList.length;i++){//breadList는 ui.js 66에서 선언됨. 66과 breadInfo.js에 object를 추가하기만 하면 slide show와 shop에 항목이 추가됨.
-    const img = document.createElement("img")//img 태그 생성.
-    img.src = `assets/`+breadList[i].var+`.png`//img src 추가.
-    img.alt = `${breadList[i].var}`//img alt 후가.
-    console.log(img)
-    document.querySelector("#slideshow").append(img)//#slideshow 내 뒤부터 img 태그 위치.
-  }
-  document.querySelector("#slideshow img").classList.add("active")//첫번째 img에 active class 부여.
-  const slides = document.querySelectorAll("#slideshow img");//slide 목록 생성.
+function slideBrdInfo(bread) {
+  //상품 설명을 바꾸는 함수
+  let brdName = document.querySelector("#brdName"); //상품명
+  let brdExplain = document.querySelector("#brdExplain"); //상품 설명
 
-  function slideBrdInfo(product) {//상품 설명을 바꾸는 함수
-    let brdName = document.querySelector("#brdName"); //상품명
-    let brdExplain = document.querySelector("#brdExplain"); //상품 설명
+  brdName.innerText = bread.var; //상품명 inner text 변경
+  brdExplain.innerText = bread.onPage; //상품 설명 inner text 변경
+} 
 
-    brdName.innerText = product.var; //상품명 inner text 변경
-    brdExplain.innerText = product.onPage; //상품 설명 inner text 변경
-  } 
+function showNextSlide() {
+  //슬라이드 쇼의 다음 img를 보여주는 함수
+  slides[current].classList.remove("active"); //현재 슬라이드의 active class를 삭제.
+  current = (current + 1) % slides.length; //다음 슬라이드 번호를 가져오는 로직. 단순 + 1에 나머지를 구하는 %를 활용하여 array의 length 즉, 마지막 슬라이드쇼에 해당하면 0을 반환함.
+  slides[current].classList.add("active"); //바뀐 슬리이드(이 순간에는 현재 슬라이드)에 active class 부여.
+  slideBrdInfo(breadList[current]); //위에 선언한 삼품 설명을 바꾸는 함수에 현재 슬라이드 번호를 입력. -> 해당하는 상품명, 상품 설명을 띄움.
+}
 
-  function showNextSlide() {
-    //슬라이드 쇼의 다음 img를 보여주는 함수
-    slides[current].classList.remove("active"); //현재 슬라이드의 active class를 삭제.
-    current = (current + 1) % slides.length; //다음 슬라이드 번호를 가져오는 로직. 단순 + 1에 나머지를 구하는 %를 활용하여 array의 length 즉, 마지막 슬라이드쇼에 해당하면 0을 반환함.
-    slides[current].classList.add("active"); //바뀐 슬리이드(이 순간에는 현재 슬라이드)에 active class 부여.
+function showPastSlide() {
+  //슬라이드 쇼의 이전 img를 보여주는 함수
+  slides[current].classList.remove("active"); //현재 슬라이드의 active class를 삭제.
+  if (current != 0) {
+    //현재 슬라이드쇼가 첫번째가 아닐 때. 위 showNextSlide와 똑같이 작동.
+    current = (current - 1) % slides.length;
+    slides[current].classList.add("active");
+    slideBrdInfo(breadList[current]);
+  } else {
+    //단순하게 현재 슬라이드에 -1을 하면 현재 슬라이드 번호가 음수가 되면서 오류가 발생하므로 예외처리.
+    current = current + slides.length - 1; //현재 슬라이드가 0번이면 슬라이드 array의 길이를 더하고 -1하여 마지막 슬라이드 번호를 반환.
+    slides[current].classList.add("active"); //바뀐 슬라이드(이 순간에는 마지막 슬라이드(마지막 번호))에 active class 부여.
     slideBrdInfo(breadList[current]); //위에 선언한 삼품 설명을 바꾸는 함수에 현재 슬라이드 번호를 입력. -> 해당하는 상품명, 상품 설명을 띄움.
   }
-
-  function showPastSlide() {
-    //슬라이드 쇼의 이전 img를 보여주는 함수
-    slides[current].classList.remove("active"); //현재 슬라이드의 active class를 삭제.
-    if (current != 0) {
-      //현재 슬라이드쇼가 첫번째가 아닐 때. 위 showNextSlide와 똑같이 작동.
-      current = (current - 1) % slides.length;
-      slides[current].classList.add("active");
-      slideBrdInfo(breadList[current]);
-    } else {
-      //단순하게 현재 슬라이드에 -1을 하면 현재 슬라이드 번호가 음수가 되면서 오류가 발생하므로 예외처리.
-      current = current + slides.length - 1; //현재 슬라이드가 0번이면 슬라이드 array의 길이를 더하고 -1하여 마지막 슬라이드 번호를 반환.
-      slides[current].classList.add("active"); //바뀐 슬라이드(이 순간에는 마지막 슬라이드(마지막 번호))에 active class 부여.
-      slideBrdInfo(breadList[current]); //위에 선언한 삼품 설명을 바꾸는 함수에 현재 슬라이드 번호를 입력. -> 해당하는 상품명, 상품 설명을 띄움.
-    }
 }
 
 slideBrdInfo(baguette); //페이지 로드 직후에는 슬라이드 쇼에 상품명/설명이 들어가 있지 않으니 임의로 첫번쨰 상품만 상품명/설명을 입력.
 setInterval(showNextSlide, 5000); //5초에 한 번씩 다음 슬라이드를 보여주는 함수를 실행.
-}
 
 //New Bread time (6.1.3 내장객체 중 Date 객체 사용)(6.3예제 활용)
 const brdTimeSign = document.querySelector("#brdTime"); //문구가 출력될 div 호출.
@@ -166,11 +154,11 @@ function product(bread) {//product를 출력하는 함수.breadInfo.js에 있는
       <h3>`+bread.remain+` Remains</h3>
     </div>
       `; //product 태그 내 html 선언.
-  document.querySelector(".shopContainer").prepend(product); //shopContainer 태그 뒤에 product 위치.
+  document.querySelector(".shopContainer").prepend(product); //body 태그 뒤에 product 위치.
 }
 
 function shop() {//shop page에 product를 생성하는 함수들 실행.
   for(i=0;i<breadList.length;i++){//breadList는 ui.js 66에서 선언됨.
-    product(breadList[breadList.length-1-i])//shop 페이지에 상품이 breadList array 순서대로 표시되게 역순으로 입력.
+    product(breadList[breadList.length-1-i])
   }
 }
