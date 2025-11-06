@@ -58,13 +58,26 @@ function footers() {
 document.addEventListener("DOMContentLoaded", () => {
   headers();
   footers();
+  slide();
   shop();//shop page에 product를 생성하는 함수 집합
 });//DOM 로딩 시 함수 실행. 페이지 실행 시 실행되는 함수들.
 
 //slide show (slide show 예제 활용)
-const slides = document.querySelectorAll("#slideshow img");
+let slides = document.querySelectorAll("#slideshow img");
 const breadList = [baguette, croissant, PAC, canele, creamCake, cookie, scone, madeleine]; //hover에 상품 설명을 띄우는 로직을 위한 array. 해당 품목은 breadInfo.js에 object로 선언되어있음.
 let current = 0; //현재 슬라이드의 번호
+
+function slide() {//img를 출력하는 함수.
+  for(i=1;i<breadList.length;i++){
+    const slideImgs = document.createElement("img"); //img 태그 생성
+    slideImgs.src = `assets/`+breadList[i-1].var+`.png`//생성된 img에 src 부여
+    slideImgs.alt = `${breadList[i-1].var}`//생성돈 img에 alt 부여
+    console.log(slideImgs)
+    document.querySelector("#slideshow").append(slideImgs); //3slideshow 안에 맨 마지막에 생성한 img 위치.
+  }
+  document.querySelector("#slideshow img").classList.add("active")
+  slides = document.querySelectorAll("#slideshow img");
+}
 
 function slideBrdInfo(bread) {
   //상품 설명을 바꾸는 함수
