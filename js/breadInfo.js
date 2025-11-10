@@ -118,3 +118,14 @@ const muffin = {
   onPage:
     "We fold juicy blueberries into a vanilla-scented batter and bake until the dome turns golden. The crumb stays soft and moist, while a sprinkle of coarse sugar adds a gentle crunch. Great for breakfast or a quick snack.",
 };
+
+const soufflePancake = {
+  var: "soufflePancake",
+  name: "Souffle Pancake",
+  cost: 7500,
+  remain: 6,
+  title: "Fluffy Stack with Berries & Cream",
+  meta: "Thick, cloud-soft souffle pancakes topped with whipped cream, fresh berries, and powdered sugar.",
+  onPage:
+    "Three fluffy souffle pancakes are stacked high and topped with soft whipped cream, fresh strawberries, blueberries, and a light dusting of sugar. Light, airy, and photo-ready—perfect as a cafe-style dessert plate.",
+};

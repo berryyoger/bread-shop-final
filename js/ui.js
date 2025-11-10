@@ -76,6 +76,7 @@ const breadList = [
   financier,
   donut,
   muffin,
+  soufflePancake,
 ]; //hover에 상품 설명을 띄우는 로직을 위한 array. 해당 품목은 breadInfo.js에 object로 선언되어있음.
 let current = 0; //현재 슬라이드의 번호
 
