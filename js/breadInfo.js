@@ -91,7 +91,7 @@ const financier = {
   name: "Brown Butter Financier",
   cost: 2600,
   remain: 18,
-  title: "Caramelized Edge, Tender Center",
+  title: "Crunch Edge, Tender Center",
   meta: "Classic French almond cake with brown-butter aroma, golden edges, and a moist, buttery crumb.",
   onPage:
     "We brown the butter for a nutty aroma, blend it with almond flour, and bake in small molds until the edges turn deep golden. The center stays soft and moist—perfect with tea or coffee.",
