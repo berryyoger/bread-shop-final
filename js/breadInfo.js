@@ -1,3 +1,5 @@
+//내용은 AI 사용하여 생성.
+
 const baguette = {
   var: "baguette",
   name: "Classic Baguette",
