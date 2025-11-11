@@ -173,7 +173,7 @@ function product(bread) {
   const product = document.createElement("div"); //div 태그 생성
   product.classList.add("product"); //생성한 div에 product class 부여
   product.innerHTML =
-    `
+    `<form action="buy.html" method="get">
     <img src="assets/` +
     bread.var +
     `.png" alt="` +
@@ -191,9 +191,10 @@ function product(bread) {
     `won</h2>
       <h3>` +
     bread.remain +
-    ` Remains</h3>
+    ` Remains</h3> <input type="submit" name = "bread" value="`+bread.var+`">
     </div>
-      `; //product 태그 내 html 선언. breadInfo.js 내 오브젝트 활용.
+    </form>
+      `; //product 태그 내 html 선언. breadInfo.js 내 오브젝트 활용. 파라미터 활용
   document.querySelector(".shopContainer").prepend(product); //body 태그 뒤에 product 위치.
 }
 
@@ -204,3 +205,8 @@ function shop() {
     product(breadList[breadList.length - 1 - i]);//breadList에 포함된 모든 품목에 대하여 product 함수 실행.
   }
 }
+
+//buy scripts
+const params = new URLSearchParams(location.search)
+
+const productBrd = params.get("bread")

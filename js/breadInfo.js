@@ -1,6 +1,6 @@
 //내용은 AI 사용하여 생성.
 
-const baguette = {
+let baguette = {
   var: "baguette",
   name: "Classic Baguette",
   cost: 3000,
@@ -11,7 +11,7 @@ const baguette = {
     "We keep it simple: unbleached flour, water, salt, and time. The dough ferments slowly for flavor and digestibility, then gets shaped, proofed, and scored by hand. High heat and steam finish the job, yielding a slender loaf with a crackly crust and a soft interior. Slice for sandwiches or tear and share—it’s our most versatile bread.",
 };
 
-const croissant = {
+let croissant = {
   var: "croissant",
   name: "Croissant",
   cost: 3500,
@@ -22,7 +22,7 @@ const croissant = {
     "We keep the dough cool and the butter colder. After a series of careful folds, the layers puff dramatically in the oven, creating a crisp shell and airy interior. It’s rich without heaviness, perfect on its own or paired with coffee.",
 };
 
-const PAC = {
+let PAC = {
   var: "pac",
   name: "Pain au chocolat",
   cost: 4000,
@@ -33,7 +33,7 @@ const PAC = {
     "We use high-cacao couverture for a deep flavor that doesn’t overwhelm the pastry. The result is crisp, buttery layers around a soft, just-melted core. A favorite for breakfast and afternoon treat alike.",
 };
 
-const canele = {
+let canele = {
   var: "canele",
   name: "Canelè",
   cost: 2000,
@@ -44,7 +44,7 @@ const canele = {
     "We season the batter a day ahead, then bake hot for the signature contrast. Expect a gentle chew, a crisp edge, and a custard center that holds its shape.",
 };
 
-const creamCake = {
+let creamCake = {
   var: "creamCake",
   name: "Vanilla-Bean Cream Cake",
   cost: 5000,
@@ -55,7 +55,7 @@ const creamCake = {
     "We whip the cream with real vanilla beans for perfume without heaviness, then add a narrow line of apple jam between sheets for balance. The result is elegant and not overly sweet.",
 };
 
-const cookie = {
+let cookie = {
   var: "cookie",
   name: "Sea Salt Chocolate Chip Cookie",
   cost: 2800,
@@ -66,7 +66,7 @@ const cookie = {
     "We brown the butter for gentle toffee notes, blend dark and semi-sweet chocolate, and rest the dough overnight for deeper flavor. Baked until the edges set while the center stays soft, then finished with flaky sea salt. Best the day it’s baked—rewarm 2–3 minutes for melty pockets.",
 };
 
-const scone = {
+let scone = {
   var: "scone",
   name: "Classic Butter Scone",
   cost: 3200,
@@ -77,7 +77,7 @@ const scone = {
     "We cut cold butter into the flour for flaky layers, keep the dough just mixed, and bake hot for a burnished top and moist crumb. Lightly sweet and richly buttery, it’s lovely on its own or with jam and clotted cream. Rewarm 2–3 minutes to refresh.",
 };
 
-const madeleine = {
+let madeleine = {
   var: "madeleine",
   name: "Classic Lemon Madeleine",
   cost: 2400,
@@ -88,7 +88,7 @@ const madeleine = {
     "We brown the butter for a nutty aroma, add lemon zest and vanilla, then rest the batter before baking. The madeleine rises with a gentle dome and a fine, moist crumb. Enjoy warm or at room temperature; a light dusting of sugar highlights the buttery flavor.",
 };
 
-const financier = {
+let financier = {
   var: "financier",
   name: "Brown Butter Financier",
   cost: 2600,
@@ -99,7 +99,7 @@ const financier = {
     "We brown the butter for a nutty aroma, blend it with almond flour, and bake in small molds until the edges turn deep golden. The center stays soft and moist—perfect with tea or coffee.",
 };
 
-const donut = {
+let donut = {
   var: "donut",
   name: "Classic Glazed Donut",
   cost: 2500,
@@ -110,7 +110,7 @@ const donut = {
     "We fry the dough until golden and light, then coat it with a thin sugar glaze that sets to a gentle shine. Soft, airy, and not too sweet—simple and classic.",
 };
 
-const muffin = {
+let muffin = {
   var: "muffin",
   name: "Blueberry Muffin",
   cost: 3200,
@@ -121,7 +121,7 @@ const muffin = {
     "We fold juicy blueberries into a vanilla-scented batter and bake until the dome turns golden. The crumb stays soft and moist, while a sprinkle of coarse sugar adds a gentle crunch. Great for breakfast or a quick snack.",
 };
 
-const soufflePancake = {
+let soufflePancake = {
   var: "soufflePancake",
   name: "Souffle Pancake",
   cost: 7500,
