@@ -191,7 +191,8 @@ function product(bread) {
     `won</h2>
       <h3>` +
     bread.remain +
-    ` Remains</h3> <input type="submit" name = "bread" value="`+bread.var+`">
+    ` Remains</h3> <input class="buyBtn" type="submit" value="BUY">
+    <input name = "bread" value="`+bread.var+`" style="display:none;">
     </div>
     </form>
       `; //product 태그 내 html 선언. breadInfo.js 내 오브젝트 활용. 파라미터 활용
@@ -206,7 +207,3 @@ function shop() {
   }
 }
 
-//buy scripts
-const params = new URLSearchParams(location.search)
-
-const productBrd = params.get("bread")

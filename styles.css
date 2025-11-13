@@ -380,24 +380,33 @@ footer {
   border: 0.2rem solid var(--bread);
 }
 
+.product > form{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .product > form> img{
   width: 100%;
 }
 
 .product > form> h1{
   width: 100%;
-  margin: 0.5rem;
 }/*name*/
 
 .product > form> h1.brdtitle{
   font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
 }
 
 .product > form> .costRemain{
-  display: flex;
+  display: grid;
+  grid-template-columns: 0.4fr 0.3fr 0.3fr;
   width: 100%;
   height: 2rem;
-  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   font-size: 0.8rem;
@@ -414,4 +423,40 @@ footer {
   margin: 0;
 }/*remain*/
 
-/* SignUp.js */
+.product > form > .costRemain > .buyBtn{
+  color: var(--bread);
+  background-color: var(--breadBright);
+  height: 70%;
+  border-radius: 20px;
+}
+
+/* buy.html */
+.buyArticle{
+  display: grid;
+  grid-template-columns: 0.6fr 0.4fr;
+  grid-gap: 0;
+  background-color: var(--breadBright);
+  width: 100%
+}
+
+.buyArticle > .buyInfo{
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.buyArticle > .buyInfo > img{
+  width: 80%;
+}
+
+
+.buyArticle > .buyBuy{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.buyArticle > .buyBuy > form{
+  display: flex;
+  flex-direction: column;
+}
