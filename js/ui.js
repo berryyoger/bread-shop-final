@@ -192,7 +192,9 @@ function product(bread) {
       <h3>` +
     bread.remain +
     ` Remains</h3> <input class="buyBtn" type="submit" value="BUY">
-    <input name = "bread" value="`+bread.var+`" style="display:none;">
+    <input name = "bread" value="` +
+    bread.var +
+    `" style="display:none;">
     </div>
     </form>
       `; //product 태그 내 html 선언. breadInfo.js 내 오브젝트 활용. 파라미터 활용
@@ -201,9 +203,9 @@ function product(bread) {
 
 function shop() {
   //shop page에 product를 생성하는 함수들 실행.
-  for (i = 0; i < breadList.length; i++) {//breadList의 길이만큼 반복 실행.
+  for (i = 0; i < breadList.length; i++) {
+    //breadList의 길이만큼 반복 실행.
     //breadList는 ui.js 66에서 선언됨.
-    product(breadList[breadList.length - 1 - i]);//breadList에 포함된 모든 품목에 대하여 product 함수 실행.
+    product(breadList[breadList.length - 1 - i]); //breadList에 포함된 모든 품목에 대하여 product 함수 실행.
   }
 }
-
