@@ -13,20 +13,29 @@ function buy(bread) {
     `.png" alt="">
         </section>
         <section class="buyBuy">
+        <div class="infoPart">
             <h1>` +
     bread.name +
     `</h1>
+    <p>  `+ bread.cost+ ` WON </p>
             <h2>` +
     bread.meta +
     `</h2>
             <h3>` +
     bread.onPage +
     `</h3>
+    </div>
             <form action="">
-                <input type="number" value="count" placeholder="amount">
-                <input type="radio">
-                <input type="submit" value="Buy">
-                <input type="submit" value="Add to cart">
+                <div>
+                    `+ bread.remain +` Remains <input type="number" value="count" placeholder="Buy amount">
+                </div>
+                <div>
+                    Need Package<input type="radio">
+                </div>
+                <div class="buyCart">
+                    <input id="addCart" value="Add to cart">
+                    <input id="buyNow" value="Buy Now">
+                </div>
             </form>
         </section>`;
   document.body.append(buy);
