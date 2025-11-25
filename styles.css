@@ -508,3 +508,15 @@ footer {
   border-radius: 10px;
   text-align: center;
 }
+
+/* sign.up */
+.logInForm > form{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.logInForm > form > label{
+  display: flex;
+  flex-direction: column;
+}

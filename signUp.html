@@ -15,26 +15,23 @@
     <div class="logInForm">
     <h2>Sign Up</h2>
     <form action="logIn.html" method="get">
-        <label>Name: <input type="text" name="name" required></label><br><br>
-        <label>Birth: <input type="date" name="age" required></label><br><br>
+      <label>ID: <input type="text" name="id" required></label>
+      <label>Password: <input type="password" name="password" required></label>
+      <label>Confirm Password: <input type="password" name="confirmPassword" required></label>
 
-        <label>과목 선택:</label>
-        <select name="subject">
-            <option value="국어">국어</option>
-            <option value="영어">영어</option>
-            <option value="수학">수학</option>
-            <option value="컴퓨터">컴퓨터</option>
-        </select>
-        <br><br>
+      <label>Mail: <input type="email" name="email" required></label>
+      <label>Name: <input type="text" name="name" required></label>
+      <label>Birth: <input type="date" name="age" required></label>
 
-        <label>gender:</label><br>
-        <input type="radio" name="gender" value="male" checked> Male
-        <input type="radio" name="gender" value="female"> Female
-        <input type="radio" name="gender" value="other"> Other
-        <br><br>
+      <label>gender</label>
+      <select name="gender">
+        <option value="male">male</option>
+        <option value="female">female</option>
+        <option value="other">other</option>
+      </select>
 
-        <input type="reset" value="Reset">
-        <input type="submit" value="Sign Up">
+      <input type="reset" value="Reset">
+      <input type="submit" value="Sign Up">
     </form>
     </div>
   </body>

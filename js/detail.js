@@ -43,5 +43,5 @@ function buy(bread) {
 
 document.addEventListener("DOMContentLoaded", () => {
   const product = breadList.find((item) => item.var === breadKey);
-  buy(product);
+  buy(product);//파라미터를 string에서 변수명으로 바꾸기 위한 함수. breadList 내에서 파라미터와 같은 이름을 가진 변수를 가져옴.
 });
