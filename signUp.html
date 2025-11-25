@@ -13,16 +13,10 @@
 
   <body>
     <div class="logInForm">
-    <h2>정보 입력</h2>
-    <form action="a2.html" method="get">
-        <label>이름: <input type="text" name="name" required></label><br><br>
-        <label>나이: <input type="number" name="age" required></label><br><br>
-
-        <label>취미: </label><br>
-        <input type="checkbox" name="hobby" value="수영"> 수영
-        <input type="checkbox" name="hobby" value="독서"> 독서
-        <input type="checkbox" name="hobby" value="요리"> 요리
-        <br><br>
+    <h2>Sign Up</h2>
+    <form action="logIn.html" method="get">
+        <label>Name: <input type="text" name="name" required></label><br><br>
+        <label>Birth: <input type="date" name="age" required></label><br><br>
 
         <label>과목 선택:</label>
         <select name="subject">
@@ -33,13 +27,14 @@
         </select>
         <br><br>
 
-        <label>성별:</label><br>
-        <input type="radio" name="gender" value="남" checked> 남
-        <input type="radio" name="gender" value="여"> 여
+        <label>gender:</label><br>
+        <input type="radio" name="gender" value="male" checked> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
         <br><br>
 
-        <input type="submit" value="입력 확인">
-        <input type="reset" value="다시 입력">
+        <input type="reset" value="Reset">
+        <input type="submit" value="Sign Up">
     </form>
     </div>
   </body>

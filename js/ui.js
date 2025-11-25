@@ -1,7 +1,7 @@
 //header
 function headers() {
   //header를 출력하는 함수.
-  const h = document.createElement("header"); //header 태그 생성.
+  const h = document.createElement("header"); //header 태그 생성. (7.10 예제 활용)
   h.innerHTML = `
     <nav>
         <div onclick="location.href='index_36.html'" class="brand">🥐Bread Shop</div>
@@ -23,7 +23,7 @@ function headers() {
 
 function footers() {
   //footer를 출력하는 함수.
-  const footer = document.createElement("footer"); //footer 태그 생성
+  const footer = document.createElement("footer"); //footer 태그 생성 (7.10 예제 활용)
   footer.innerHTML = `
     <div class="footerCwuNav" style="overflow: visible">
     <h2>Connect with us</h2>
@@ -144,15 +144,9 @@ function newBreadTime() {
     leftedMin = 59 - min; //남은 분 계산
     leftedSec = 60 - sec; //남은 초 계산
     brdTimeSign.innerText =
-      "🥐새로운 빵이 나오기까지" +
-      leftedHour +
-      "시간" +
-      leftedMin +
-      "분" +
-      leftedSec +
-      "초 남았습니다.🍞"; //문구 출력
+      "🥐새로운 빵이 나오기까지" + leftedHour + "시간" + leftedMin + "분" + leftedSec + "초 남았습니다.🍞"; //문구 출력
   } else {
-    let leftedHour = 12 - hour; //현재 시간이 00시 이후, 12시 이전일 때. 위와 같이 처리.
+    let leftedHour = 11 - hour; //현재 시간이 00시 이후, 12시 이전일 때. 위와 같이 처리.
     leftedMin = 59 - min;
     leftedSec = 60 - sec;
     brdTimeSign.innerText =
@@ -169,7 +163,7 @@ setInterval(newBreadTime, 1000);
 
 //shop.html scripts
 function product(bread) {
-  //product를 출력하는 함수.breadInfo.js에 있는 상품 object 호출.
+  //product를 출력하는 함수.breadInfo.js에 있는 상품 object 호출. (7.10 예제 활용)
   const product = document.createElement("div"); //div 태그 생성
   product.classList.add("product"); //생성한 div에 product class 부여
   product.innerHTML =
