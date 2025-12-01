@@ -6,15 +6,15 @@ function headers() {
     <nav>
         <div onclick="location.href='index_36.html'" class="brand">🥐Bread Shop</div>
         <div class="navA">
-            <a href="/shop.html">Shop</a>
-            <a href="/purchase.html">Purchase</a>
-            <a href="/myCart.html">My Cart</a>
-            <a href="/aboutUs.html">About Us</a>
-            <a href="/contactUs.html">Contact Us</a>
+            <a href="/shop_36.html">상품</a>
+            <a href="/purchase_36.html">구매</a>
+            <a href="/myCart_36.html">내 장바구니</a>
+            <a href="/aboutUs_36.html">회사 소개</a>
+            <a href="/contactUs_36.html">Contact Us</a>
         </div>
         <div class="loginbox">
-            <a href="/logIn.html">Log In</a>
-            <a href="/signUp.html">Sign Up</a>
+            <a href="/logIn_36.html">로그인</a>
+            <a href="/signUp_36.html">회원가입</a>
         </div>
     </nav>
     `; //header 태그 내 html 선언.
