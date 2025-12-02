@@ -10,7 +10,7 @@ function headers() {
             <a href="/purchase_36.html">구매</a>
             <a href="/myCart_36.html">내 장바구니</a>
             <a href="/aboutUs_36.html">회사 소개</a>
-            <a href="/contactUs_36.html">Contact Us</a>
+            <a href="/contactUs_36.html"></a>
         </div>
         <div class="loginbox">
             <a href="/logIn_36.html">로그인</a>
