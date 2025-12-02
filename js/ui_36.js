@@ -10,7 +10,7 @@ function headers() {
             <a href="/purchase_36.html">구매</a>
             <a href="/myCart_36.html">내 장바구니</a>
             <a href="/aboutUs_36.html">회사 소개</a>
-            <a href="/contactUs_36.html"></a>
+            <a href="/contactUs_36.html">문의하기</a>
         </div>
         <div class="loginbox">
             <a href="/logIn_36.html">로그인</a>
@@ -77,6 +77,7 @@ const breadList = [
   donut,
   muffin,
   soufflePancake,
+  waffle
 ]; //hover에 상품 설명을 띄우는 로직을 위한 array. 해당 품목은 breadInfo.js에 object로 선언되어있음.
 let current = 0; //현재 슬라이드의 번호
 
@@ -167,7 +168,7 @@ function product(bread) {
   const product = document.createElement("div"); //div 태그 생성
   product.classList.add("product"); //생성한 div에 product class 부여
   product.innerHTML =
-    `<form action="buy.html" method="get">
+    `<form action="buy_36.html" method="get">
     <img src="assets/` +
     bread.var +
     `.png" alt="` +

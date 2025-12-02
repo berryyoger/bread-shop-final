@@ -145,7 +145,7 @@ body {
   background-image: url(assets/bg.png);
   background-position: top;
   background-size: 100%;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   height: auto;
   color: var(--bread);
 
@@ -352,6 +352,7 @@ footer {
   padding-top: 20px;
   padding-left: 40px;
   padding-right: 40px;
+  margin-top: 3rem;
 }
 
 .intro {
@@ -458,12 +459,16 @@ footer {
   justify-content: space-between;
 }
 
+.buyArticle > .buyBuy > .infoPart{
+  height: 100%;
+}
+
 .buyArticle > .buyBuy > form{
   display: flex;
   flex-direction: column;
 }
 
-.buyArticle > .buyBuy > h1{
+.buyArticle > .buyBuy > form > h1{
   font-weight: 900;
   font-size: 3rem;
   margin: 0.5rem;
