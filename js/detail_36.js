@@ -1,6 +1,5 @@
-const params = new URLSearchParams(location.search);
-const breadKey = params.get("bread");
-console.log(breadKey);
+const params = new URLSearchParams(location.search);//파라미터를 정의하기 위해 파라미터 값을 선언함.
+const breadKey = params.get("bread");//파라미터에서 bread의 value를 가져옴
 
 function buy(bread) {
   const buy = document.createElement("article");

@@ -11,6 +11,23 @@
     <script src="js/breadInfo_36.js"></script>
 </head>
 <body>
-    
+    <div style="
+                height: 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 2rem;">
+        <h1 id = "greet"></h1>
+        <a href="index_36.html">메인페이지로 가기</a>
+    </div>
+    <script>
+        const params = new URLSearchParams(location.search);//파라미터를 정의하기 위해 파라미터 값을 선언함.
+        const userName = params.get("name");//name 파라미터의 value를 get 
+
+        const greet = document.getElementById("greet")
+        greet.innerText = `${userName}님의 회원가입을 환영합니다!`
+        console.log(userName)
+    </script>
 </body>
 </html>
