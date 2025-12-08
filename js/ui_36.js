@@ -30,22 +30,22 @@ function footers() {
     <ul class="icons">
         <li style="text-align: left;">
             <a href="https://www.facebook.com/{}" class="link" target="_blank">
-                <img src="/assets/facebook.svg" alt="Bread Shop on Facebook" >
+                <img src="assets/facebook.svg" alt="Bread Shop on Facebook" >
             </a>
         </li>
         <li style="text-align: left;">
             <a href="https://www.instagram.com/{}" class="link" target="_blank">
-                <img src="/assets/instagram.svg" alt="Bread Shop on Instagram" >
+                <img src="assets/instagram.svg" alt="Bread Shop on Instagram" >
             </a>
         </li>
         <li style="text-align: left;">
             <a href="https://twitter.com/{}" target="_blank" class="link">
-                <img src="/assets/twitter.svg" alt="Bread Shop on Twitter" >
+                <img src="assets/twitter.svg" alt="Bread Shop on Twitter" >
             </a>
         </li>
         <li style="text-align: left;">
             <a href="https://www.youtube.com/c/{}" target="_blank" class="link">
-                <img src="/assets/youtube.svg" alt="Bread Shop on Youtube" >
+                <img src="assets/youtube.svg" alt="Bread Shop on Youtube" >
             </a>
         </li>
     </ul>
