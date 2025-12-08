@@ -133,32 +133,17 @@ setInterval(showNextSlide, 5000); //5초에 한 번씩 다음 슬라이드를 �
 //New Bread time (6.1.3 내장객체 중 Date 객체 사용)(6.3예제 활용)
 const brdTimeSign = document.querySelector("#brdTime"); //문구가 출력될 div 호출.
 function newBreadTime() {
-  //문구에 사용될 시간을 계산하는 함수.
-  let cTime = new Date(); //Date 호출
-  let hour = cTime.getHours(),
-    min = cTime.getMinutes();
-  sec = cTime.getSeconds(); // 현재 시각, 분, 초 호출
+  const now = new Date();
+  const target = new Date(now);
+  target.setHours(12, 0, 0, 0);
+  if (now >= target) target.setDate(target.getDate() + 1); // 다음날 12:00
 
-  if (hour > 12) {
-    //(12시에 빵이 나온다고 하면, 13,14시 등 12시 이후는 값이 음수가 되니 예외처리.)
-    let leftedHour = 35 - hour; //12에 24를 더하는 것이 아닌, 24를 더하고 1을 빼야 분,초와 맞음.
-    leftedMin = 59 - min; //남은 분 계산
-    leftedSec = 60 - sec; //남은 초 계산
-    brdTimeSign.innerText =
-      "🥐새로운 빵이 나오기까지" + leftedHour + "시간" + leftedMin + "분" + leftedSec + "초 남았습니다.🍞"; //문구 출력
-  } else {
-    let leftedHour = 11 - hour; //현재 시간이 00시 이후, 12시 이전일 때. 위와 같이 처리.
-    leftedMin = 59 - min;
-    leftedSec = 60 - sec;
-    brdTimeSign.innerText =
-      "🥐새로운 빵이 나오기까지" +
-      leftedHour +
-      "시간" +
-      leftedMin +
-      "분" +
-      leftedSec +
-      "초 남았습니다.🍞";
-  }
+  const diff = target - now;
+  const leftedHour = Math.floor(diff / 3600000);
+  const leftedMin  = Math.floor((diff % 3600000) / 60000);
+  const leftedSec  = Math.floor((diff % 60000) / 1000);
+
+  brdTimeSign.innerText = `🥐새로운 빵이 나오기까지 ${leftedHour}시간 ${leftedMin}분 ${leftedSec}초 남았습니다.🍞`;
 }
 setInterval(newBreadTime, 1000);
 
