@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>About Us — Bread Studio (Interactive)</title>
+    <meta
+      name="description"
+      content="빵으로 사람과 사람을 잇는 Bread Studio — 인터랙티브한 회사 소개 페이지"
+    />
+    <link rel="stylesheet" href="testAboutUs_36.css" />
+    <script src="testAboutUs_36.js" defer></script>
+  </head>
+  <body>
+    <!-- Background Layers -->
+    <div class="bg">
+      <object
+        class="bg__svg"
+        type="image/svg+xml"
+        data="assets/hero-bg.svg"
+        aria-hidden="true"
+      ></object>
+      <div class="bg__overlay"></div>
+      <canvas id="bgGrain" class="bg__grain" aria-hidden="true"></canvas>
+    </div>
+
+    <header class="appbar">
+      <div class="wrap inner">
+        <div class="brand">
+          <div class="badge">BS</div>
+          Bread Studio
+        </div>
+        <nav aria-label="메뉴">
+          <ul>
+            <li><a href="index_36.html">홈</a></li>
+            <li><a href="shop_36.html">메뉴</a></li>
+            <li><a href="aboutUs_36.html" aria-current="page">회사 소개</a></li>
+            <li><a href="contactUs_36.html">문의</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap grid">
+        <div>
+          <h1><span class="grad">빵</span>으로 세상을 설득합니다</h1>
+          <p class="lead">
+            우리는 재료를 단순하게, 공정을 정직하게, 기록을 집요하게 다룹니다.
+            저온·장시간 발효로 향을 켜고, 수분·염도·온도를 수치로 관리해
+            재현성을 높입니다. 매일 정오, 가장 좋은 상태의 결과만 진열대에
+            올립니다.
+          </p>
+          <div class="hero-cta">
+            <a class="btn brand" href="shop_36.html">오늘의 메뉴 보기</a>
+            <a class="btn" href="#values">우리가 지키는 것들</a>
+          </div>
+        </div>
+
+        <!-- Showcase: 3D Glass Tiles -->
+        <div
+          class="heroShowcase"
+          id="heroShowcase"
+          aria-label="제빵 공정 하이라이트"
+        >
+          <article class="tile glass t1 tilt">
+            <div class="tile-kicker">FERMENT</div>
+            <h3>느린 발효</h3>
+            <p>18–24h 저온 발효로 향·소화 균형</p>
+          </article>
+          <article class="tile glass t2 tilt">
+            <div class="tile-kicker">HYDRATION</div>
+            <h3>수분율 65–72%</h3>
+            <p>열·스팀과 만나 오픈 크럼 형성</p>
+          </article>
+          <article class="tile glass t3 tilt">
+            <div class="tile-kicker">BAKE</div>
+            <h3>고온 스팀</h3>
+            <p>크랙리 크러스트 & 얇은 껍질</p>
+          </article>
+        </div>
+
+        <div class="heroBadge">🥐 매일 12:00 First Batch</div>
+      </div>
+    </section>
+
+    <!-- MARQUEE (CSS 무한 스크롤 + JS 자동복제) -->
+    <section class="marquee" aria-label="운영 철학 하이라이트">
+      <div class="wrap">
+        <div class="marquee-track" id="marquee" aria-hidden="true">
+          <span>Slow Fermentation</span><b> · Hand Scoring</b>
+          <span> · Thermal Log</span><b> · 27 Layers</b>
+          <span> · Simple Formula</span><b> · Flour · Water · Salt</b>
+          <span> · Butter</span><b> · Daily 12:00 Bake</b>
+          <span> · Neighborhood First</span><b> · Less Sugar</b>
+          <span> · Slow Fermentation</span><b> · Hand Scoring</b>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPANY INTRO -->
+    <section id="company" class="section">
+      <div class="wrap">
+        <h2 class="title">회사 소개</h2>
+        <p class="lead">
+          Bread Studio는 “단순한 레시피·정직한 공정·집요한 기록”을 원칙으로
+          지역과 일상을 더 맛있게 만드는 베이커리 연구소입니다. 불필요한
+          첨가물을 쓰지 않고 원재료의 개성을 살리며, 모든 공정은 수치로 기록해
+          재현성과 품질의 일관성을 지킵니다.
+        </p>
+
+        <div class="values values--wide">
+          <article class="card tilt">
+            <div class="icon">A</div>
+            <h3>원산지 투명성</h3>
+            <p>
+              주요 재료의 공급망을 문서화하고 QR코드로 확인 가능하게 운영합니다.
+            </p>
+          </article>
+          <article class="card tilt">
+            <div class="icon">B</div>
+            <h3>데이터 기반 공정</h3>
+            <p>
+              반죽 온도, 발효 시간, 스팀량, 오븐 프로파일을 로깅해 일관된 결과를
+              재현합니다.
+            </p>
+          </article>
+          <article class="card tilt">
+            <div class="icon">C</div>
+            <h3>로컬과의 연결</h3>
+            <p>
+              동네 카페·농가와 공동소싱 및 시즌 메뉴를 기획해 지역 생태계를
+              확장합니다.
+            </p>
+          </article>
+          <article class="card tilt">
+            <div class="icon">D</div>
+            <h3>지속가능성</h3>
+            <p>
+              과생산 방지를 위해 데이터 기반 생산량 조절, 폐기 최소화 툴을
+              운영합니다.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOUNDER / CEO -->
+    <section id="founder" class="section section--alt">
+      <div class="wrap founder">
+        <div class="founder__bio">
+          <h2 class="title">대표 소개</h2>
+          <p class="lead">
+            “좋은 빵은 좋은 기록에서 나온다.” 바리스타·제빵·데이터 기록을 융합해
+            표준화를 만듭니다. 고객 피드백을 매일 수집하고, 개선 주기를 일
+            단위로 세분화합니다.
+          </p>
+          <ul class="founder__list">
+            <li>前) 스타벅스 스타필드하남 1F(티바나점) 바리스타</li>
+            <li>前) 트루어스 로스터스 바리스타</li>
+            <li>2026 SCA AST</li>
+            <li>2026 KCTC Finalist</li>
+            <li>2026 KLAC Judge</li>
+            <li>2026 KCRC Judge</li>
+            <li>2026 MOC Finalist</li>
+            <li>2026 GSC Cupping 3rd</li>
+            <li>SCA CSP All Module AST</li>
+            <li>SCA Csus AST</li>
+            <li>SCA CTech AST</li>
+          </ul>
+        </div>
+        <div class="founder__card glass tilt">
+          <figure class="founder__photo">
+            <img src="assets/founder.jpg" alt="Bread Studio 대표 프로필 사진" />
+          </figure>
+          <div class="founder__badge">CEO / Head Barista 권정욱</div>
+          <h3>정오에 굽는 집</h3>
+          <p>
+            발효 스케줄과 오븐 로테이션을 치밀하게 조정해 ‘기다림의 가치’를
+            공유합니다.
+          </p>
+          <div class="founder__grid">
+            <div><b>전문화</b><span>발효/크루아상/크림</span></div>
+            <div><b>관심사</b><span>공정 로그, 레시피 버전 관리</span></div>
+            <div><b>철학</b><span>단순, 정직, 반복</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUES -->
+    <section id="values" class="section">
+      <div class="wrap">
+        <h2 class="title">우리가 지키는 가치</h2>
+        <p class="lead">단순함, 기록, 반복—세 가지가 맛을 만듭니다.</p>
+
+        <div class="values">
+          <article class="card tilt">
+            <div class="icon">①</div>
+            <h3>정직한 재료</h3>
+            <p>밀가루, 물, 소금, 버터. 원산지와 공정을 투명하게 기록합니다.</p>
+          </article>
+          <article class="card tilt">
+            <div class="icon">②</div>
+            <h3>느린 발효</h3>
+            <p>저온 장시간 발효로 풍미와 소화의 균형을 맞춥니다.</p>
+          </article>
+          <article class="card tilt">
+            <div class="icon">③</div>
+            <h3>정교한 공정</h3>
+            <p>수치가 감각을 뒷받침할 때 재현성이 생깁니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE + STATS -->
+    <section class="section">
+      <div class="wrap">
+        <h2 class="title">타임라인</h2>
+        <p class="lead">
+          첫 오븐을 켠 날부터 오늘까지, 작은 승리들을 쌓아 왔습니다.
+        </p>
+
+        <div class="timeline">
+          <div class="mile">
+            <h4>2022 Q1 · 첫 반죽</h4>
+            <div class="meta">12평 매장에서 시작, 생산/폐기율 기록</div>
+          </div>
+          <div class="mile">
+            <h4>2022 Q2 · 공정 로그 도입</h4>
+            <div class="meta">반죽 온도/습도/휴지 시간 기록 체계화</div>
+          </div>
+          <div class="mile">
+            <h4>2022 Q3 · 수분율 표준화</h4>
+            <div class="meta">Hydration 범위 도출(65–72%)</div>
+          </div>
+          <div class="mile">
+            <h4>2023 Q1 · 정오의 집</h4>
+            <div class="meta">“정오 배치” 컨셉 확립</div>
+          </div>
+          <div class="mile">
+            <h4>2023 Q2 · 로깅 자동화</h4>
+            <div class="meta">오븐/스팀/온도곡선 로깅</div>
+          </div>
+          <div class="mile">
+            <h4>2023 Q4 · 오븐 프로파일링</h4>
+            <div class="meta">크러스트 균일화</div>
+          </div>
+          <div class="mile">
+            <h4>2024 Q2 · 디저트 라인 확장</h4>
+            <div class="meta">크루아상 업그레이드·케이크 론칭</div>
+          </div>
+          <div class="mile">
+            <h4>2024 Q4 · 로컬 협업</h4>
+            <div class="meta">공동 소싱·시즌 메뉴</div>
+          </div>
+          <div class="mile">
+            <h4>2025 Q2 · 생산성 +18%</h4>
+            <div class="meta">생산/폐기 최적화</div>
+          </div>
+          <div class="mile">
+            <h4>2025 Q4 · 기록 공개</h4>
+            <div class="meta">오픈 키친 데이</div>
+          </div>
+        </div>
+
+        <div style="height: 18px"></div>
+
+        <div class="stats" id="stats">
+          <div class="stat">
+            <div class="num" data-count="1200">0</div>
+            <div class="cap">월 방문</div>
+          </div>
+          <div class="stat">
+            <div class="num" data-count="4000">0</div>
+            <div class="cap">매주 만들어지는 빵</div>
+          </div>
+          <div class="stat">
+            <div class="num" data-count="52">0</div>
+            <div class="cap">빵 종류</div>
+          </div>
+          <div class="stat">
+            <div class="num" data-count="365">0</div>
+            <div class="cap">고객 우선</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTNERS (무한 스크롤 로고 벨트) -->
+    <section id="partners" class="section" aria-label="파트너 로고">
+      <div class="wrap">
+        <h2 class="title">함께하는 파트너</h2>
+        <p class="lead">
+          동네 카페, 로스터리, 농가와 함께 더 맛있는 연결을 만듭니다.
+        </p>
+
+        <div class="belt">
+          <div class="belt-track" id="partnersTrack" aria-hidden="true">
+            <figure class="partner">
+              <img src="assets/logo-1.png" alt="네슬레" />
+            </figure>
+            <figure class="partner">
+              <img src="assets/logo-2.png" alt="스타벅스" />
+            </figure>
+            <figure class="partner">
+              <img src="assets/logo-3.webp" alt="SCA" />
+            </figure>
+            <figure class="partner">
+              <img src="assets/logo-4.jpg" alt="라 에스메랄다" />
+            </figure>
+            <figure class="partner">
+              <img src="assets/logo-5.png" alt="커피 미 업" />
+            </figure>
+            <figure class="partner">
+              <img src="assets/logo-6.png" alt="아야커피" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECIPE PLAYGROUND -->
+    <section class="section">
+      <div class="wrap">
+        <h2 class="title">레시피 플레이그라운드</h2>
+        <p class="lead">
+          수분/소금/발효 시간이 맛에 미치는 영향(간단 모델)을 시각화합니다.
+        </p>
+        <div class="play">
+          <div class="panel">
+            <h3>변수</h3>
+            <div class="ctrl">
+              <label
+                >수분율 (Hydration)
+                <input type="range" id="hydr" min="55" max="90" value="68" />
+                <output id="hydrOut">68%</output>
+              </label>
+              <label
+                >소금
+                <input
+                  type="range"
+                  id="salt"
+                  min="1.6"
+                  max="2.4"
+                  step="0.1"
+                  value="2.0"
+                />
+                <output id="saltOut">2.0%</output>
+              </label>
+              <label
+                >발효 시간
+                <input
+                  type="range"
+                  id="ferm"
+                  min="4"
+                  max="48"
+                  step="1"
+                  value="18"
+                />
+                <output id="fermOut">18h</output>
+              </label>
+            </div>
+          </div>
+          <div
+            class="panel"
+            style="display: grid; gap: 16px; align-content: start"
+          >
+            <h3>예상 지표</h3>
+            <div class="gauge" id="gauge"><b id="score">82</b></div>
+            <div style="display: grid; gap: 8px">
+              <div>크럼 오픈도: <b id="crumb">상</b></div>
+              <div>소화 용이성: <b id="digest">상</b></div>
+              <div>염도 체감: <b id="salty">중</b></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-wrap">
+      <div class="cta">
+        <div class="bloblet"></div>
+        <div class="bloblet"></div>
+        <h3 style="margin: 0">함께 더 맛있는 하루를 만듭니다</h3>
+        <p style="margin: 0; color: var(--muted)">
+          대량 주문·콜라보·케이터링 제안 등 언제든 환영합니다.
+        </p>
+        <a class="btn brand" href="contactUs_36.html">문의하기</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap foot">
+        <div class="foot__grid">
+          <section class="foot__col">
+            <h4 class="foot__title">회사 소개</h4>
+            <p class="foot__text">
+              Bread Studio는 “단순한 레시피 · 정직한 공정 · 집요한 기록”으로
+              지역과 일상을 더 맛있게 만드는 베이커리 연구소입니다.
+            </p>
+          </section>
+
+          <section class="foot__col">
+            <h4 class="foot__title">영업 안내</h4>
+            <ul class="foot__list">
+              <li>월–토 10:00–19:00</li>
+              <li>연중 휴무</li>
+            </ul>
+          </section>
+
+          <section class="foot__col">
+            <h4 class="foot__title">방문</h4>
+            <ul class="foot__list">
+              <li>경기 남양주시 와부읍</li>
+              <li>한강로 123</li>
+              <li><a href="#map">지도 보기</a></li>
+            </ul>
+          </section>
+
+          <section class="foot__col">
+            <h4 class="foot__title">문의</h4>
+            <ul class="foot__list">
+              <li><a href="tel:+8210-0000-0000">010-0000-0000</a></li>
+              <li>
+                <a href="mailto:hello@bread.studio">hello@bread.studio</a>
+              </li>
+              <li><a href="contactUs_36.html">문의 폼</a></li>
+            </ul>
+          </section>
+
+          <section class="foot__col foot__col--newsletter">
+            <h4 class="foot__title">뉴스레터</h4>
+            <form
+              class="foot__form"
+              onsubmit="event.preventDefault(); alert('구독이 등록되었습니다!');"
+            >
+              <input type="email" required placeholder="이메일 주소" />
+              <button class="btn brand" type="submit">구독</button>
+            </form>
+            <div class="foot__social">
+              <a href="#" aria-label="Instagram">Instagram</a>
+              <span>·</span>
+              <a href="#" aria-label="YouTube">YouTube</a>
+              <span>·</span>
+              <a href="#" aria-label="Threads">Threads</a>
+            </div>
+          </section>
+        </div>
+
+        <div class="foot__bar">
+          <div>© <span id="y"></span> Bread Studio. All rights reserved.</div>
+          <div>made with ♡ · daily bake at 12:00</div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SVG Gooey Filter -->
+    <svg width="0" height="0" style="position: absolute">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    0 0 0 18 -8"
+            result="goo"
+          />
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+      </defs>
+    </svg>
+  </body>
+</html>

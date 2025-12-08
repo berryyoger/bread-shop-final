@@ -9,8 +9,9 @@ function headers() {
             <a href="/shop_36.html">상품</a>
             <a href="/purchase_36.html">구매</a>
             <a href="/myCart_36.html">내 장바구니</a>
-            <a href="/aboutUs_36.html">회사 소개</a>
+            <a href="/testAboutUs_36.html">회사 소개</a>
             <a href="/contactUs_36.html">문의하기</a>
+            
         </div>
         <div class="loginbox">
             <a href="/logIn_36.html">로그인</a>
@@ -77,7 +78,7 @@ const breadList = [
   donut,
   muffin,
   soufflePancake,
-  waffle
+  waffle,
 ]; //hover에 상품 설명을 띄우는 로직을 위한 array. 해당 품목은 breadInfo.js에 object로 선언되어있음.
 let current = 0; //현재 슬라이드의 번호
 
@@ -86,9 +87,9 @@ function slide() {
   for (i = 1; i < breadList.length; i++) {
     const slideImgs = document.createElement("img"); //img 태그 생성
     slideImgs.src = `assets/` + breadList[i - 1].var + `.png`; //생성된 img에 src 부여
-    slideImgs.alt = `${breadList[i - 1].var}`; //생성돈 img에 alt 부여
+    slideImgs.alt = `${breadList[i - 1].var}`; //생성된 img에 alt 부여
     console.log(slideImgs);
-    document.querySelector("#slideshow").append(slideImgs); //3slideshow 안에 맨 마지막에 생성한 img 위치.
+    document.querySelector("#slideshow").append(slideImgs); //slideshow 안에 맨 마지막에 생성한 img 위치.
   }
   document.querySelector("#slideshow img").classList.add("active");
   slides = document.querySelectorAll("#slideshow img");
@@ -145,7 +146,13 @@ function newBreadTime() {
     leftedMin = 59 - min; //남은 분 계산
     leftedSec = 60 - sec; //남은 초 계산
     brdTimeSign.innerText =
-      "🥐새로운 빵이 나오기까지" + leftedHour + "시간" + leftedMin + "분" + leftedSec + "초 남았습니다.🍞"; //문구 출력
+      "🥐새로운 빵이 나오기까지" +
+      leftedHour +
+      "시간" +
+      leftedMin +
+      "분" +
+      leftedSec +
+      "초 남았습니다.🍞"; //문구 출력
   } else {
     let leftedHour = 11 - hour; //현재 시간이 00시 이후, 12시 이전일 때. 위와 같이 처리.
     leftedMin = 59 - min;
